@@ -1,0 +1,3152 @@
+[
+  {
+    "id": "S1-C01",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Beta shape a",
+    "value": "2.2",
+    "unit": "shape",
+    "source": "results/s1/summary.json:constants.beta_shape[0]",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S1-C02",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Beta shape b",
+    "value": "1.8",
+    "unit": "shape",
+    "source": "results/s1/summary.json:constants.beta_shape[1]",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S1-C03",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Gate threshold tau*",
+    "value": "0.6",
+    "unit": "probability",
+    "source": "results/s1/summary.json:constants.tau_star",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S1-C04",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Total alpha",
+    "value": "0.05",
+    "unit": "probability",
+    "source": "results/s1/summary.json:constants.alpha",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S1-C05",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Audits per epoch",
+    "value": "120",
+    "unit": "labels",
+    "source": "results/s1/summary.json:constants.audits_per_epoch",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S1-C06",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Primary additive shift",
+    "value": "0.15",
+    "unit": "probability points",
+    "source": "results/s1/summary.json:constants.primary_eps",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S1-C07",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Primary onset epoch",
+    "value": "8",
+    "unit": "epoch",
+    "source": "results/s1/summary.json:constants.primary_onset_epoch",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P01",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Baseline coverage",
+    "value": "0.4378659000815812",
+    "unit": "fraction",
+    "source": "results/s1/summary.json:primary_pricing.baseline_coverage",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P02",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Shifted coverage",
+    "value": "0.6594173308941428",
+    "unit": "fraction",
+    "source": "results/s1/summary.json:primary_pricing.shifted_coverage",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P03",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Baseline accepted-failure rate",
+    "value": "0.24147484462579805",
+    "unit": "fraction",
+    "source": "results/s1/summary.json:primary_pricing.baseline_accepted_failure_rate",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P04",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Shifted accepted-failure rate",
+    "value": "0.31955757703826526",
+    "unit": "fraction",
+    "source": "results/s1/summary.json:primary_pricing.shifted_accepted_failure_rate",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P05",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Baseline expected cost",
+    "value": "8.111744803130051",
+    "unit": "cost/task",
+    "source": "results/s1/summary.json:primary_pricing.baseline_expected_cost",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P06",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Shifted expected cost",
+    "value": "8.439097443198303",
+    "unit": "cost/task",
+    "source": "results/s1/summary.json:primary_pricing.shifted_expected_cost",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P07",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Exact incremental cost",
+    "value": "0.32735264006825204",
+    "unit": "cost/task",
+    "source": "results/s1/summary.json:primary_pricing.exact_incremental_cost",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P08",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Monte Carlo incremental cost",
+    "value": "0.32761714984269596",
+    "unit": "cost/task",
+    "source": "results/s1/summary.json:primary_pricing.mc_incremental_cost",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P09",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Monte Carlo bootstrap CI low",
+    "value": "0.3270064093876303",
+    "unit": "cost/task",
+    "source": "results/s1/summary.json:primary_pricing.mc_bootstrap_95[0]",
+    "role": "uncertainty",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P10",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Monte Carlo bootstrap CI high",
+    "value": "0.3282257990440532",
+    "unit": "cost/task",
+    "source": "results/s1/summary.json:primary_pricing.mc_bootstrap_95[1]",
+    "role": "uncertainty",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P11",
+    "study": "Controlled pricing and restart study",
+    "quantity": "All-escalate fail-safe cost",
+    "value": "9.5",
+    "unit": "cost/task",
+    "source": "results/s1/summary.json:primary_pricing.all_escalate_cost",
+    "role": "operational",
+    "boundary": ""
+  },
+  {
+    "id": "S1-P12",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Fail-safe premium versus shifted gate",
+    "value": "1.0609025568016968",
+    "unit": "cost/task",
+    "source": "results/s1/summary.json:primary_pricing.fail_safe_premium_vs_shifted_gate",
+    "role": "operational",
+    "boundary": ""
+  },
+  {
+    "id": "S1-N01",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Null deployments",
+    "value": "5000",
+    "unit": "deployments",
+    "source": "results/s1/summary.json:null.n_deployments",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S1-N02",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Restart-bank null alarms",
+    "value": "16",
+    "unit": "deployments",
+    "source": "results/s1/summary.json:null.restart_bank.alarms",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-N03",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Restart-bank null alarm rate",
+    "value": "0.0032",
+    "unit": "fraction",
+    "source": "results/s1/summary.json:null.restart_bank.rate",
+    "role": "headline",
+    "boundary": "Finite implementation check, not proof"
+  },
+  {
+    "id": "S1-N04",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Restart-bank null CP95 low",
+    "value": "0.001830148659819956",
+    "unit": "fraction",
+    "source": "results/s1/summary.json:null.restart_bank.clopper_pearson_95[0]",
+    "role": "uncertainty",
+    "boundary": ""
+  },
+  {
+    "id": "S1-N05",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Restart-bank null CP95 high",
+    "value": "0.005191411332075068",
+    "unit": "fraction",
+    "source": "results/s1/summary.json:null.restart_bank.clopper_pearson_95[1]",
+    "role": "uncertainty",
+    "boundary": ""
+  },
+  {
+    "id": "S1-O01",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Epoch-8 restart post-onset alarm rate",
+    "value": "0.997",
+    "unit": "fraction",
+    "source": "results/s1/summary.json:primary_onset.restart_bank.post_onset_alarm_rate",
+    "role": "headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-O02",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Epoch-8 restart mean delay",
+    "value": "155.60581745235706",
+    "unit": "audited labels",
+    "source": "results/s1/summary.json:primary_onset.restart_bank.mean_delay_labels_among_alarms",
+    "role": "headline",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "S1-O03",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Epoch-8 restart delay CI low",
+    "value": "151.96058174523571",
+    "unit": "audited labels",
+    "source": "results/s1/summary.json:primary_onset.restart_bank.mean_delay_bootstrap_ci_low",
+    "role": "uncertainty",
+    "boundary": ""
+  },
+  {
+    "id": "S1-O04",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Epoch-8 restart delay CI high",
+    "value": "159.34122367101304",
+    "unit": "audited labels",
+    "source": "results/s1/summary.json:primary_onset.restart_bank.mean_delay_bootstrap_ci_high",
+    "role": "uncertainty",
+    "boundary": ""
+  },
+  {
+    "id": "S1-O05",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Epoch-8 start-once mean delay",
+    "value": "584.5943097997892",
+    "unit": "audited labels",
+    "source": "results/s1/summary.json:primary_onset.start_once.mean_delay_labels_among_alarms",
+    "role": "headline",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "S1-D-0p05-01",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.05: predicted",
+    "value": "1177.057835013346",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.05.predicted_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p05-02",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.05: measured mean",
+    "value": "1194.348",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.05.mean_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p05-03",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.05: measured/predicted ratio",
+    "value": "1.0146893079272166",
+    "unit": "ratio",
+    "source": "results/s1/delay_summary.csv:eps=0.05.ratio",
+    "role": "delay calibration",
+    "boundary": "First-order heuristic, not bound"
+  },
+  {
+    "id": "S1-D-0p08-01",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.08: predicted",
+    "value": "470.220809842038",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.08.predicted_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p08-02",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.08: measured mean",
+    "value": "475.163",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.08.mean_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p08-03",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.08: measured/predicted ratio",
+    "value": "1.0105103603552177",
+    "unit": "ratio",
+    "source": "results/s1/delay_summary.csv:eps=0.08.ratio",
+    "role": "delay calibration",
+    "boundary": "First-order heuristic, not bound"
+  },
+  {
+    "id": "S1-D-0p12-01",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.12: predicted",
+    "value": "216.6823942081018",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.12.predicted_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p12-02",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.12: measured mean",
+    "value": "225.445",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.12.mean_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p12-03",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.12: measured/predicted ratio",
+    "value": "1.0404398604876155",
+    "unit": "ratio",
+    "source": "results/s1/delay_summary.csv:eps=0.12.ratio",
+    "role": "delay calibration",
+    "boundary": "First-order heuristic, not bound"
+  },
+  {
+    "id": "S1-D-0p15-01",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.15: predicted",
+    "value": "142.92254204512986",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.15.predicted_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p15-02",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.15: measured mean",
+    "value": "146.468",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.15.mean_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p15-03",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.15: measured/predicted ratio",
+    "value": "1.0248068492495088",
+    "unit": "ratio",
+    "source": "results/s1/delay_summary.csv:eps=0.15.ratio",
+    "role": "delay calibration",
+    "boundary": "First-order heuristic, not bound"
+  },
+  {
+    "id": "S1-D-0p2-01",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.2: predicted",
+    "value": "84.85971593947187",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.2.predicted_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p2-02",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.2: measured mean",
+    "value": "87.46",
+    "unit": "audited labels",
+    "source": "results/s1/delay_summary.csv:eps=0.2.mean_delay",
+    "role": "delay calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S1-D-0p2-03",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Delay shift 0.2: measured/predicted ratio",
+    "value": "1.0306421490072255",
+    "unit": "ratio",
+    "source": "results/s1/delay_summary.csv:eps=0.2.ratio",
+    "role": "delay calibration",
+    "boundary": "First-order heuristic, not bound"
+  },
+  {
+    "id": "S1-LATE-restart",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Epoch-12 restart_bank post-onset alarm rate",
+    "value": "0.998",
+    "unit": "fraction",
+    "source": "results/s1/onset_summary.csv:onset=12,monitor=restart_bank.post_onset_alarm_rate",
+    "role": "late-onset headline",
+    "boundary": ""
+  },
+  {
+    "id": "S1-LATE-startonce",
+    "study": "Controlled pricing and restart study",
+    "quantity": "Epoch-12 start_once post-onset alarm rate",
+    "value": "0.038",
+    "unit": "fraction",
+    "source": "results/s1/onset_summary.csv:onset=12,monitor=start_once.post_onset_alarm_rate",
+    "role": "late-onset headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-C01",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "Diagnostic deployments per world",
+    "value": "1000",
+    "unit": "deployments",
+    "source": "results/s2/diagnostic_summary.json:constants.n_reps_per_world",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S2-C02",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "Diagnostic horizon",
+    "value": "24",
+    "unit": "epochs",
+    "source": "results/s2/diagnostic_summary.json:constants.horizon_epochs",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S2-C03",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "Diagnostic onset",
+    "value": "8",
+    "unit": "epoch",
+    "source": "results/s2/diagnostic_summary.json:constants.onset_epoch",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S2-C04",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "Alpha per contract family",
+    "value": "0.025",
+    "unit": "probability",
+    "source": "results/s2/diagnostic_summary.json:constants.alpha_per_guard",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S2-C05",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "Uniform start weight",
+    "value": "0.041666666666666664",
+    "unit": "weight",
+    "source": "results/s2/diagnostic_summary.json:constants.uniform_start_weight",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S2-C06",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "Segment log boundary",
+    "value": "6.866933284461882",
+    "unit": "log e-value",
+    "source": "results/s2/diagnostic_summary.json:constants.boundary_log",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S2-C07",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "Claim lambda",
+    "value": "0.4",
+    "unit": "lambda",
+    "source": "results/s2/diagnostic_summary.json:constants.lambda_calibration",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S2-C08",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "Performance lambda",
+    "value": "0.24",
+    "unit": "lambda",
+    "source": "results/s2/diagnostic_summary.json:constants.lambda_performance",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S2-C09",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "Baseline performance reference m0",
+    "value": "0.7585251553738122",
+    "unit": "pass probability",
+    "source": "results/s2/diagnostic_summary.json:constants.m0_exact_baseline_pass",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-01",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 coverage",
+    "value": "0.4378659000815812",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.coverage",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-02",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 accepted pass rate",
+    "value": "0.7585251553738122",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.accepted_pass_rate",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-03",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 accepted failure rate",
+    "value": "0.2414748446261878",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.accepted_failure_rate",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-04",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 claim gap",
+    "value": "0.0",
+    "unit": "probability",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.mean_claim_gap",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-05",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 performance gap",
+    "value": "0.0",
+    "unit": "probability",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.performance_gap_vs_m0",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-SIG-neither",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 signature neither",
+    "value": "1.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.neither.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-SIG-calibration_only",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 signature calibration_only",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.calibration_only.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-SIG-performance_only",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 signature performance_only",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.performance_only.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-SIG-both",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 signature both",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.both.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-SIG-pre_onset_alarm",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 signature pre_onset_alarm",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.pre_onset_alarm.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-01",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 coverage",
+    "value": "0.6594173308941428",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.coverage",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-02",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 accepted pass rate",
+    "value": "0.6804424229611037",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.accepted_pass_rate",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-03",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 accepted failure rate",
+    "value": "0.3195575770388963",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.accepted_failure_rate",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-04",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 claim gap",
+    "value": "0.1420559230299681",
+    "unit": "probability",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.mean_claim_gap",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-05",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 performance gap",
+    "value": "0.0780827324127084",
+    "unit": "probability",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.performance_gap_vs_m0",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-SIG-neither",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 signature neither",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.neither.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-SIG-calibration_only",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 signature calibration_only",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.calibration_only.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-SIG-performance_only",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 signature performance_only",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.performance_only.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-SIG-both",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 signature both",
+    "value": "0.999",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.both.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-SIG-pre_onset_alarm",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 signature pre_onset_alarm",
+    "value": "0.001",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.pre_onset_alarm.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-01",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 coverage",
+    "value": "0.064",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.coverage",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-02",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 accepted pass rate",
+    "value": "0.6999999999999995",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.accepted_pass_rate",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-03",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 accepted failure rate",
+    "value": "0.3000000000000005",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.accepted_failure_rate",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-04",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 claim gap",
+    "value": "0.0",
+    "unit": "probability",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.mean_claim_gap",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-05",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 performance gap",
+    "value": "0.0585251553738126",
+    "unit": "probability",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.performance_gap_vs_m0",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-SIG-neither",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 signature neither",
+    "value": "0.026",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.neither.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-SIG-calibration_only",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 signature calibration_only",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.calibration_only.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-SIG-performance_only",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 signature performance_only",
+    "value": "0.966",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.performance_only.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-SIG-both",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 signature both",
+    "value": "0.006",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.both.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-SIG-pre_onset_alarm",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 signature pre_onset_alarm",
+    "value": "0.002",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.pre_onset_alarm.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-01",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 coverage",
+    "value": "0.878246764862047",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.coverage",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-02",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 accepted pass rate",
+    "value": "0.7716756360219931",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.accepted_pass_rate",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-03",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 accepted failure rate",
+    "value": "0.2283243639780069",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.accepted_failure_rate",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-04",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 claim gap",
+    "value": "0.1223481412254751",
+    "unit": "probability",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.mean_claim_gap",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-05",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 performance gap",
+    "value": "-0.0131504806481809",
+    "unit": "probability",
+    "source": "results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.performance_gap_vs_m0",
+    "role": "diagnostic mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-SIG-neither",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 signature neither",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.neither.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-SIG-calibration_only",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 signature calibration_only",
+    "value": "0.999",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.calibration_only.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-SIG-performance_only",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 signature performance_only",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.performance_only.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-SIG-both",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 signature both",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.both.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-SIG-pre_onset_alarm",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 signature pre_onset_alarm",
+    "value": "0.001",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.pre_onset_alarm.rate",
+    "role": "diagnostic headline",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-CAL-POST",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 calibration post-onset alarm rate",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=N0_stationary_null,guard=calibration.post_onset_rate",
+    "role": "diagnostic result",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-CAL-DELAY",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 calibration mean delay",
+    "value": "",
+    "unit": "audited labels",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=N0_stationary_null,guard=calibration.mean_delay_labels",
+    "role": "diagnostic result",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "S2-N0-PERF-POST",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 performance post-onset alarm rate",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=N0_stationary_null,guard=performance.post_onset_rate",
+    "role": "diagnostic result",
+    "boundary": ""
+  },
+  {
+    "id": "S2-N0-PERF-DELAY",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "N0 performance mean delay",
+    "value": "",
+    "unit": "audited labels",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=N0_stationary_null,guard=performance.mean_delay_labels",
+    "role": "diagnostic result",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "S2-J1-CAL-POST",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 calibration post-onset alarm rate",
+    "value": "0.999",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=J1_judge_overconfidence,guard=calibration.post_onset_rate",
+    "role": "diagnostic result",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-CAL-DELAY",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 calibration mean delay",
+    "value": "184.5715715715716",
+    "unit": "audited labels",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=J1_judge_overconfidence,guard=calibration.mean_delay_labels",
+    "role": "diagnostic result",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "S2-J1-PERF-POST",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 performance post-onset alarm rate",
+    "value": "0.999",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=J1_judge_overconfidence,guard=performance.post_onset_rate",
+    "role": "diagnostic result",
+    "boundary": ""
+  },
+  {
+    "id": "S2-J1-PERF-DELAY",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "J1 performance mean delay",
+    "value": "572.047047047047",
+    "unit": "audited labels",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=J1_judge_overconfidence,guard=performance.mean_delay_labels",
+    "role": "diagnostic result",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "S2-W2-CAL-POST",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 calibration post-onset alarm rate",
+    "value": "0.006",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=W2_honest_workload_hardening,guard=calibration.post_onset_rate",
+    "role": "diagnostic result",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-CAL-DELAY",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 calibration mean delay",
+    "value": "1185.5",
+    "unit": "audited labels",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=W2_honest_workload_hardening,guard=calibration.mean_delay_labels",
+    "role": "diagnostic result",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "S2-W2-PERF-POST",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 performance post-onset alarm rate",
+    "value": "0.972",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=W2_honest_workload_hardening,guard=performance.post_onset_rate",
+    "role": "diagnostic result",
+    "boundary": ""
+  },
+  {
+    "id": "S2-W2-PERF-DELAY",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "W2 performance mean delay",
+    "value": "859.2530864197531",
+    "unit": "audited labels",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=W2_honest_workload_hardening,guard=performance.mean_delay_labels",
+    "role": "diagnostic result",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "S2-M3-CAL-POST",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 calibration post-onset alarm rate",
+    "value": "0.999",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=M3_masked_calibration_break,guard=calibration.post_onset_rate",
+    "role": "diagnostic result",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-CAL-DELAY",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 calibration mean delay",
+    "value": "238.1201201201201",
+    "unit": "audited labels",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=M3_masked_calibration_break,guard=calibration.mean_delay_labels",
+    "role": "diagnostic result",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "S2-M3-PERF-POST",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 performance post-onset alarm rate",
+    "value": "0.0",
+    "unit": "fraction",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=M3_masked_calibration_break,guard=performance.post_onset_rate",
+    "role": "diagnostic result",
+    "boundary": ""
+  },
+  {
+    "id": "S2-M3-PERF-DELAY",
+    "study": "Contract-diagnostic intervention study",
+    "quantity": "M3 performance mean delay",
+    "value": "",
+    "unit": "audited labels",
+    "source": "results/s2/diagnostic_guard_summary.csv:world=M3_masked_calibration_break,guard=performance.mean_delay_labels",
+    "role": "diagnostic result",
+    "boundary": "Conditional on post-onset alarm"
+  },
+  {
+    "id": "API-C01",
+    "study": "API-pilot record audit",
+    "quantity": "Task rows",
+    "value": "2880",
+    "unit": "rows",
+    "source": "results/real_model/real_model_record_audit.json:checks.row_count.observed",
+    "role": "record integrity",
+    "boundary": ""
+  },
+  {
+    "id": "API-C02",
+    "study": "API-pilot record audit",
+    "quantity": "Run-epoch cells",
+    "value": "24",
+    "unit": "cells",
+    "source": "derived from 3 runs x 8 epochs",
+    "role": "record integrity",
+    "boundary": ""
+  },
+  {
+    "id": "API-C03",
+    "study": "API-pilot record audit",
+    "quantity": "Tasks per run-epoch",
+    "value": "120",
+    "unit": "tasks",
+    "source": "results/real_model/real_model_record_audit.json",
+    "role": "record integrity",
+    "boundary": ""
+  },
+  {
+    "id": "API-C04",
+    "study": "API-pilot record audit",
+    "quantity": "Released audit flags",
+    "value": "1974",
+    "unit": "rows",
+    "source": "results/real_model/real_model_record_audit.json:checks.audit_flag_mismatches.supplied_audit_total",
+    "role": "record integrity",
+    "boundary": ""
+  },
+  {
+    "id": "API-C05",
+    "study": "API-pilot record audit",
+    "quantity": "Reconstructed actual audits",
+    "value": "1953",
+    "unit": "rows",
+    "source": "results/real_model/real_model_record_audit.json:checks.audit_flag_mismatches.reconstructed_audit_total",
+    "role": "record integrity",
+    "boundary": ""
+  },
+  {
+    "id": "API-C06",
+    "study": "API-pilot record audit",
+    "quantity": "Audit-flag mismatches",
+    "value": "21",
+    "unit": "rows",
+    "source": "results/real_model/real_model_record_audit.json:checks.audit_flag_mismatches.count",
+    "role": "record integrity",
+    "boundary": ""
+  },
+  {
+    "id": "API-C07",
+    "study": "API-pilot record audit",
+    "quantity": "Week-zero accepted tasks",
+    "value": "169",
+    "unit": "tasks",
+    "source": "results/real_model/real_model_record_audit.json:week0.accepted",
+    "role": "calibration input",
+    "boundary": ""
+  },
+  {
+    "id": "API-C08",
+    "study": "API-pilot record audit",
+    "quantity": "Week-zero successes",
+    "value": "167",
+    "unit": "tasks",
+    "source": "results/real_model/real_model_record_audit.json:week0.successes",
+    "role": "calibration input",
+    "boundary": ""
+  },
+  {
+    "id": "API-C09",
+    "study": "API-pilot record audit",
+    "quantity": "Point m0",
+    "value": "0.9882",
+    "unit": "probability",
+    "source": "results/real_model/real_model_record_audit.json:week0.m0_point",
+    "role": "pilot reference",
+    "boundary": ""
+  },
+  {
+    "id": "API-C10",
+    "study": "API-pilot record audit",
+    "quantity": "One-sided 99% CP lower m0",
+    "value": "0.9511940097984064",
+    "unit": "probability",
+    "source": "results/real_model/real_model_record_audit.json:week0.one_sided_cp99_lower",
+    "role": "sensitivity",
+    "boundary": ""
+  },
+  {
+    "id": "API-A-01",
+    "study": "API-pilot",
+    "quantity": "Run A pooled FCR pre",
+    "value": "0.0203488372093023",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=A.pooled_fcr_pre",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-A-02",
+    "study": "API-pilot",
+    "quantity": "Run A pooled FCR post",
+    "value": "0.0148809523809523",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=A.pooled_fcr_post",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-A-03",
+    "study": "API-pilot",
+    "quantity": "Run A pooled coverage pre",
+    "value": "0.7166666666666667",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=A.pooled_coverage_pre",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-A-04",
+    "study": "API-pilot",
+    "quantity": "Run A pooled coverage post",
+    "value": "0.7",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=A.pooled_coverage_post",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-A-calibration_bank",
+    "study": "API-pilot",
+    "quantity": "Run A claim first alarm post-onset audit",
+    "value": "",
+    "unit": "audited labels",
+    "source": "results/real_model/real_model_bank_reanalysis.json:monitors.A.calibration_bank.first_alarm.post_onset_audit_index",
+    "role": "external mechanism",
+    "boundary": "Descriptive; finite calibration stage not certified"
+  },
+  {
+    "id": "API-A-performance_bank_m0_point",
+    "study": "API-pilot",
+    "quantity": "Run A performance first alarm post-onset audit",
+    "value": "",
+    "unit": "audited labels",
+    "source": "results/real_model/real_model_bank_reanalysis.json:monitors.A.performance_bank_m0_point.first_alarm.post_onset_audit_index",
+    "role": "external mechanism",
+    "boundary": "Descriptive; finite calibration stage not certified"
+  },
+  {
+    "id": "API-A-performance_bank_m0_cp99_lower",
+    "study": "API-pilot",
+    "quantity": "Run A performance conservative first alarm post-onset audit",
+    "value": "",
+    "unit": "audited labels",
+    "source": "results/real_model/real_model_bank_reanalysis.json:monitors.A.performance_bank_m0_cp99_lower.first_alarm.post_onset_audit_index",
+    "role": "external mechanism",
+    "boundary": "Descriptive; finite calibration stage not certified"
+  },
+  {
+    "id": "API-B-01",
+    "study": "API-pilot",
+    "quantity": "Run B pooled FCR pre",
+    "value": "0.0179104477611939",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=B.pooled_fcr_pre",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-B-02",
+    "study": "API-pilot",
+    "quantity": "Run B pooled FCR post",
+    "value": "0.2777777777777778",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=B.pooled_fcr_post",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-B-03",
+    "study": "API-pilot",
+    "quantity": "Run B pooled coverage pre",
+    "value": "0.6979166666666666",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=B.pooled_coverage_pre",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-B-04",
+    "study": "API-pilot",
+    "quantity": "Run B pooled coverage post",
+    "value": "0.9375",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=B.pooled_coverage_post",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-B-calibration_bank",
+    "study": "API-pilot",
+    "quantity": "Run B claim first alarm post-onset audit",
+    "value": "75",
+    "unit": "audited labels",
+    "source": "results/real_model/real_model_bank_reanalysis.json:monitors.B.calibration_bank.first_alarm.post_onset_audit_index",
+    "role": "external mechanism",
+    "boundary": "Descriptive; finite calibration stage not certified"
+  },
+  {
+    "id": "API-B-performance_bank_m0_point",
+    "study": "API-pilot",
+    "quantity": "Run B performance first alarm post-onset audit",
+    "value": "114",
+    "unit": "audited labels",
+    "source": "results/real_model/real_model_bank_reanalysis.json:monitors.B.performance_bank_m0_point.first_alarm.post_onset_audit_index",
+    "role": "external mechanism",
+    "boundary": "Descriptive; finite calibration stage not certified"
+  },
+  {
+    "id": "API-B-performance_bank_m0_cp99_lower",
+    "study": "API-pilot",
+    "quantity": "Run B performance conservative first alarm post-onset audit",
+    "value": "123",
+    "unit": "audited labels",
+    "source": "results/real_model/real_model_bank_reanalysis.json:monitors.B.performance_bank_m0_cp99_lower.first_alarm.post_onset_audit_index",
+    "role": "external mechanism",
+    "boundary": "Descriptive; finite calibration stage not certified"
+  },
+  {
+    "id": "API-C-01",
+    "study": "API-pilot",
+    "quantity": "Run C pooled FCR pre",
+    "value": "0.0060240963855421",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=C.pooled_fcr_pre",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-C-02",
+    "study": "API-pilot",
+    "quantity": "Run C pooled FCR post",
+    "value": "0.0485436893203883",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=C.pooled_fcr_post",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-C-03",
+    "study": "API-pilot",
+    "quantity": "Run C pooled coverage pre",
+    "value": "0.6916666666666667",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=C.pooled_coverage_pre",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-C-04",
+    "study": "API-pilot",
+    "quantity": "Run C pooled coverage post",
+    "value": "0.4291666666666666",
+    "unit": "fraction",
+    "source": "results/real_model/real_model_run_summary.csv:run=C.pooled_coverage_post",
+    "role": "external mechanism",
+    "boundary": ""
+  },
+  {
+    "id": "API-C-calibration_bank",
+    "study": "API-pilot",
+    "quantity": "Run C claim first alarm post-onset audit",
+    "value": "",
+    "unit": "audited labels",
+    "source": "results/real_model/real_model_bank_reanalysis.json:monitors.C.calibration_bank.first_alarm.post_onset_audit_index",
+    "role": "external mechanism",
+    "boundary": "Descriptive; finite calibration stage not certified"
+  },
+  {
+    "id": "API-C-performance_bank_m0_point",
+    "study": "API-pilot",
+    "quantity": "Run C performance first alarm post-onset audit",
+    "value": "",
+    "unit": "audited labels",
+    "source": "results/real_model/real_model_bank_reanalysis.json:monitors.C.performance_bank_m0_point.first_alarm.post_onset_audit_index",
+    "role": "external mechanism",
+    "boundary": "Descriptive; finite calibration stage not certified"
+  },
+  {
+    "id": "API-C-performance_bank_m0_cp99_lower",
+    "study": "API-pilot",
+    "quantity": "Run C performance conservative first alarm post-onset audit",
+    "value": "",
+    "unit": "audited labels",
+    "source": "results/real_model/real_model_bank_reanalysis.json:monitors.C.performance_bank_m0_cp99_lower.first_alarm.post_onset_audit_index",
+    "role": "external mechanism",
+    "boundary": "Descriptive; finite calibration stage not certified"
+  },
+  {
+    "id": "EXT-RAMP-1",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Ramp measured/(D+R) ratio 1",
+    "value": "1.027",
+    "unit": "ratio",
+    "source": "external/fable_v2_2/results/extension/ramp_delays.csv",
+    "role": "secondary robustness",
+    "boundary": ""
+  },
+  {
+    "id": "EXT-RAMP-2",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Ramp measured/(D+R) ratio 2",
+    "value": "1.02",
+    "unit": "ratio",
+    "source": "external/fable_v2_2/results/extension/ramp_delays.csv",
+    "role": "secondary robustness",
+    "boundary": ""
+  },
+  {
+    "id": "EXT-RAMP-3",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Ramp measured/(D+R) ratio 3",
+    "value": "0.992",
+    "unit": "ratio",
+    "source": "external/fable_v2_2/results/extension/ramp_delays.csv",
+    "role": "secondary robustness",
+    "boundary": ""
+  },
+  {
+    "id": "EXT-RAMP-4",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Ramp measured/(D+R) ratio 4",
+    "value": "0.982",
+    "unit": "ratio",
+    "source": "external/fable_v2_2/results/extension/ramp_delays.csv",
+    "role": "secondary robustness",
+    "boundary": ""
+  },
+  {
+    "id": "EXT-MIX-0p05",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Lambda-mixture delay premium at gap 0.05",
+    "value": "1.28",
+    "unit": "ratio",
+    "source": "external/fable_v2_2/results/extension/mixture_delays.csv",
+    "role": "secondary robustness",
+    "boundary": ""
+  },
+  {
+    "id": "EXT-MIX-0p08",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Lambda-mixture delay premium at gap 0.08",
+    "value": "1.276",
+    "unit": "ratio",
+    "source": "external/fable_v2_2/results/extension/mixture_delays.csv",
+    "role": "secondary robustness",
+    "boundary": ""
+  },
+  {
+    "id": "EXT-MIX-0p12",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Lambda-mixture delay premium at gap 0.12",
+    "value": "1.24",
+    "unit": "ratio",
+    "source": "external/fable_v2_2/results/extension/mixture_delays.csv",
+    "role": "secondary robustness",
+    "boundary": ""
+  },
+  {
+    "id": "EXT-MIX-0p2",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Lambda-mixture delay premium at gap 0.2",
+    "value": "1.224",
+    "unit": "ratio",
+    "source": "external/fable_v2_2/results/extension/mixture_delays.csv",
+    "role": "secondary robustness",
+    "boundary": ""
+  },
+  {
+    "id": "EXT-2S-UP",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Underconfidence upward-process alarm rate",
+    "value": "0.92",
+    "unit": "fraction",
+    "source": "external/fable_v2_2/results/pilot_arms/offline_arms.json:two_sided_w4.up_alarm_rate",
+    "role": "exploratory boundary",
+    "boundary": "No inherited anytime guarantee"
+  },
+  {
+    "id": "EXT-2S-DOWN",
+    "study": "Fable v2.2 secondary records",
+    "quantity": "Underconfidence downward-process alarm rate",
+    "value": "0.04",
+    "unit": "fraction",
+    "source": "external/fable_v2_2/results/pilot_arms/offline_arms.json:two_sided_w4.down_alarm_rate",
+    "role": "exploratory boundary",
+    "boundary": "No inherited anytime guarantee"
+  },
+  {
+    "id": "S3-D01",
+    "study": "Generated-task API study",
+    "quantity": "Protocol-and-analysis SHA-256",
+    "value": "1a8b15039ed5d34fae36b9320aebd8e34fc4cebe713c678ab2a2fa51a08a0e92",
+    "unit": "sha256",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": "Author-controlled pre-execution hash; not independent registry status."
+  },
+  {
+    "id": "S3-D02",
+    "study": "Generated-task API study",
+    "quantity": "Model snapshot",
+    "value": "claude-haiku-4-5-20251001",
+    "unit": "model id",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": "One provider and model snapshot."
+  },
+  {
+    "id": "S3-D03",
+    "study": "Generated-task API study",
+    "quantity": "Task domains",
+    "value": "2",
+    "unit": "domains",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": "Generated arithmetic and generated code specifications."
+  },
+  {
+    "id": "S3-D04",
+    "study": "Generated-task API study",
+    "quantity": "Week-zero tasks per domain",
+    "value": "300",
+    "unit": "tasks/domain",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D05",
+    "study": "Generated-task API study",
+    "quantity": "Calibration-fit rows per domain",
+    "value": "200",
+    "unit": "rows/domain",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D06",
+    "study": "Generated-task API study",
+    "quantity": "Holdout rows per domain",
+    "value": "100",
+    "unit": "rows/domain",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D07",
+    "study": "Generated-task API study",
+    "quantity": "Deployments",
+    "value": "50",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D08",
+    "study": "Generated-task API study",
+    "quantity": "Conditions",
+    "value": "5",
+    "unit": "condition cells",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D09",
+    "study": "Generated-task API study",
+    "quantity": "Deployments per condition",
+    "value": "10",
+    "unit": "deployments/condition",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D10",
+    "study": "Generated-task API study",
+    "quantity": "Deployment epochs",
+    "value": "8",
+    "unit": "epochs",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": "Epochs 2 through 9 inclusive."
+  },
+  {
+    "id": "S3-D11",
+    "study": "Generated-task API study",
+    "quantity": "Tasks per epoch",
+    "value": "100",
+    "unit": "tasks/epoch",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D12",
+    "study": "Generated-task API study",
+    "quantity": "Randomized onset support",
+    "value": "4,5,6,7",
+    "unit": "epochs",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D13",
+    "study": "Generated-task API study",
+    "quantity": "Calendar-bank start epochs",
+    "value": "2,5,8",
+    "unit": "epochs",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D14",
+    "study": "Generated-task API study",
+    "quantity": "Guard alpha",
+    "value": "0.05",
+    "unit": "probability",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D15",
+    "study": "Generated-task API study",
+    "quantity": "Guard lambda",
+    "value": "0.32",
+    "unit": "parameter",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D16",
+    "study": "Generated-task API study",
+    "quantity": "Hidden code tests per task",
+    "value": "6",
+    "unit": "tests/task",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": "Tests do not constitute a complete formal specification."
+  },
+  {
+    "id": "S3-D17",
+    "study": "Generated-task API study",
+    "quantity": "Code subprocess timeout",
+    "value": "5",
+    "unit": "seconds/task",
+    "source": "evidence/the generated-task API study-study.zip::PROTOCOL.md",
+    "role": "design",
+    "boundary": "Not a hardened security sandbox."
+  },
+  {
+    "id": "S3-D18",
+    "study": "Generated-task API study",
+    "quantity": "API calls",
+    "value": "81200",
+    "unit": "calls",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D19",
+    "study": "Generated-task API study",
+    "quantity": "Solver calls",
+    "value": "40600",
+    "unit": "calls",
+    "source": "evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz",
+    "role": "provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D20",
+    "study": "Generated-task API study",
+    "quantity": "Judge calls",
+    "value": "40600",
+    "unit": "calls",
+    "source": "evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz",
+    "role": "provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D21",
+    "study": "Generated-task API study",
+    "quantity": "Input tokens",
+    "value": "8536163",
+    "unit": "tokens",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D22",
+    "study": "Generated-task API study",
+    "quantity": "Output tokens",
+    "value": "6878249",
+    "unit": "tokens",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D23",
+    "study": "Generated-task API study",
+    "quantity": "Recorded run duration",
+    "value": "180.5",
+    "unit": "minutes",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D24",
+    "study": "Generated-task API study",
+    "quantity": "Raw provider response rows",
+    "value": "81200",
+    "unit": "records",
+    "source": "evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz",
+    "role": "provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D25",
+    "study": "Generated-task API study",
+    "quantity": "Unique provider request IDs",
+    "value": "81200",
+    "unit": "identifiers",
+    "source": "evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz",
+    "role": "provenance",
+    "boundary": "Group-level reconciliation, not exact task-row linkage."
+  },
+  {
+    "id": "S3-D26",
+    "study": "Generated-task API study",
+    "quantity": "Unique provider message IDs",
+    "value": "81200",
+    "unit": "identifiers",
+    "source": "evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz",
+    "role": "provenance",
+    "boundary": "Group-level reconciliation, not exact task-row linkage."
+  },
+  {
+    "id": "S3-D27",
+    "study": "Generated-task API study",
+    "quantity": "Per-task rows",
+    "value": "40000",
+    "unit": "rows",
+    "source": "evidence/the generated-task API study-study.zip::records/study_per_task.csv",
+    "role": "provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D28",
+    "study": "Generated-task API study",
+    "quantity": "Accepted and audited rows",
+    "value": "27809",
+    "unit": "rows",
+    "source": "evidence/the generated-task API study-study.zip::records/study_per_task.csv",
+    "role": "provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3-D29",
+    "study": "Generated-task API study",
+    "quantity": "Registration request ID",
+    "value": "req_011Ce1ZYbFX4RicRje5S1wH5",
+    "unit": "provider request id",
+    "source": "evidence/the generated-task API study-study.zip::registration_receipt.json",
+    "role": "provenance",
+    "boundary": "Supports chronology; request body is not independently attested."
+  },
+  {
+    "id": "S3-D30",
+    "study": "Generated-task API study",
+    "quantity": "Registration timestamp",
+    "value": "2026-08-13T22:47:45Z",
+    "unit": "UTC",
+    "source": "evidence/the generated-task API study-study.zip::registration_receipt.json",
+    "role": "provenance",
+    "boundary": "Author-held provider-response receipt."
+  },
+  {
+    "id": "S3-W0-ARITH-01",
+    "study": "Generated-task API study",
+    "quantity": "ARITH all-task week-zero pass rate",
+    "value": "0.6733",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-W0-ARITH-02",
+    "study": "Generated-task API study",
+    "quantity": "ARITH Platt intercept",
+    "value": "-1.3329955528138762",
+    "unit": "coefficient",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-W0-ARITH-03",
+    "study": "Generated-task API study",
+    "quantity": "ARITH Platt slope",
+    "value": "2.4202471227854243",
+    "unit": "coefficient",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-W0-ARITH-04",
+    "study": "Generated-task API study",
+    "quantity": "ARITH accepted-cohort performance reference m0",
+    "value": "1.0",
+    "unit": "probability",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": "Finite plug-in holdout reference."
+  },
+  {
+    "id": "S3-W0-ARITH-05",
+    "study": "Generated-task API study",
+    "quantity": "ARITH selection-shrinkage point delta",
+    "value": "0.0",
+    "unit": "probability",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-W0-ARITH-06",
+    "study": "Generated-task API study",
+    "quantity": "ARITH selection-shrinkage upper 95% value",
+    "value": "0.0",
+    "unit": "probability",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": "Sensitivity value; not full uncertainty propagation."
+  },
+  {
+    "id": "S3-W0-ARITH-07",
+    "study": "Generated-task API study",
+    "quantity": "ARITH accepted holdout rows",
+    "value": "69",
+    "unit": "rows",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-W0-CODE-01",
+    "study": "Generated-task API study",
+    "quantity": "CODE all-task week-zero pass rate",
+    "value": "0.7067",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-W0-CODE-02",
+    "study": "Generated-task API study",
+    "quantity": "CODE Platt intercept",
+    "value": "0.4183202924961456",
+    "unit": "coefficient",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-W0-CODE-03",
+    "study": "Generated-task API study",
+    "quantity": "CODE Platt slope",
+    "value": "1.1830498085566326",
+    "unit": "coefficient",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-W0-CODE-04",
+    "study": "Generated-task API study",
+    "quantity": "CODE accepted-cohort performance reference m0",
+    "value": "0.9231",
+    "unit": "probability",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": "Finite plug-in holdout reference."
+  },
+  {
+    "id": "S3-W0-CODE-05",
+    "study": "Generated-task API study",
+    "quantity": "CODE selection-shrinkage point delta",
+    "value": "0.007",
+    "unit": "probability",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-W0-CODE-06",
+    "study": "Generated-task API study",
+    "quantity": "CODE selection-shrinkage upper 95% value",
+    "value": "0.0844",
+    "unit": "probability",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": "Sensitivity value; not full uncertainty propagation."
+  },
+  {
+    "id": "S3-W0-CODE-07",
+    "study": "Generated-task API study",
+    "quantity": "CODE accepted holdout rows",
+    "value": "65",
+    "unit": "rows",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "calibration",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-CTRL-01",
+    "study": "Generated-task API study",
+    "quantity": "ARITH control mean coverage",
+    "value": "0.70525",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-CTRL-02",
+    "study": "Generated-task API study",
+    "quantity": "ARITH control mean accepted-failure rate",
+    "value": "0.01690375",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-CTRL-03",
+    "study": "Generated-task API study",
+    "quantity": "ARITH control start-once claim alarms",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "result",
+    "boundary": "10 deployments."
+  },
+  {
+    "id": "S3-ARITH-CTRL-04",
+    "study": "Generated-task API study",
+    "quantity": "ARITH control performance alarms",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "result",
+    "boundary": "10 deployments."
+  },
+  {
+    "id": "S3-ARITH-CTRL-05",
+    "study": "Generated-task API study",
+    "quantity": "ARITH control calendar-bank alarms",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "result",
+    "boundary": "10 deployments."
+  },
+  {
+    "id": "S3-CODE-CTRL-01",
+    "study": "Generated-task API study",
+    "quantity": "CODE control mean coverage",
+    "value": "0.688625",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-CODE-CTRL-02",
+    "study": "Generated-task API study",
+    "quantity": "CODE control mean accepted-failure rate",
+    "value": "0.086885",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-CODE-CTRL-03",
+    "study": "Generated-task API study",
+    "quantity": "CODE control start-once claim alarms",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "result",
+    "boundary": "10 deployments."
+  },
+  {
+    "id": "S3-CODE-CTRL-04",
+    "study": "Generated-task API study",
+    "quantity": "CODE control performance alarms",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "result",
+    "boundary": "10 deployments."
+  },
+  {
+    "id": "S3-CODE-CTRL-05",
+    "study": "Generated-task API study",
+    "quantity": "CODE control calendar-bank alarms",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "result",
+    "boundary": "10 deployments."
+  },
+  {
+    "id": "S3-ARITH-PROMPT-01",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-PROMPT mean pre-onset coverage",
+    "value": "0.6977666666666666",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-PROMPT-02",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-PROMPT mean post-onset coverage",
+    "value": "0.9430666666666667",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-PROMPT-03",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-PROMPT mean coverage change",
+    "value": "0.24530000000000007",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-PROMPT-04",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-PROMPT mean pre-onset accepted-failure rate",
+    "value": "0.018332166666666667",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-PROMPT-05",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-PROMPT mean post-onset accepted-failure rate",
+    "value": "0.3047148333333333",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-PROMPT-06",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-PROMPT mean post-onset claim-outcome gap",
+    "value": "0.3017276666666666",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-PROMPT-07",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-PROMPT claim-gap CI low",
+    "value": "0.29361356399489086",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": "Seed-level normal 95% interval over 10 deployments."
+  },
+  {
+    "id": "S3-ARITH-PROMPT-08",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-PROMPT claim-gap CI high",
+    "value": "0.3098417693384424",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": "Seed-level normal 95% interval over 10 deployments."
+  },
+  {
+    "id": "S3-ARITH-MIX-01",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-MIX mean pre-onset coverage",
+    "value": "0.6898833333333333",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-MIX-02",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-MIX mean post-onset coverage",
+    "value": "0.4559666666666666",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-MIX-03",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-MIX mean coverage change",
+    "value": "-0.23391666666666672",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-MIX-04",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-MIX mean pre-onset accepted-failure rate",
+    "value": "0.014241333333333333",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-MIX-05",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-MIX mean post-onset accepted-failure rate",
+    "value": "0.03209649999999999",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-MIX-06",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-MIX mean post-onset claim-outcome gap",
+    "value": "0.010362166666666651",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-ARITH-MIX-07",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-MIX claim-gap CI low",
+    "value": "0.006194333244128077",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": "Seed-level normal 95% interval over 10 deployments."
+  },
+  {
+    "id": "S3-ARITH-MIX-08",
+    "study": "Generated-task API study",
+    "quantity": "ARITH-MIX claim-gap CI high",
+    "value": "0.014530000089205226",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": "Seed-level normal 95% interval over 10 deployments."
+  },
+  {
+    "id": "S3-CODE-PROMPT-01",
+    "study": "Generated-task API study",
+    "quantity": "CODE-PROMPT mean pre-onset coverage",
+    "value": "0.7011999999999999",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-CODE-PROMPT-02",
+    "study": "Generated-task API study",
+    "quantity": "CODE-PROMPT mean post-onset coverage",
+    "value": "0.6894333333333333",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-CODE-PROMPT-03",
+    "study": "Generated-task API study",
+    "quantity": "CODE-PROMPT mean coverage change",
+    "value": "-0.011766666666666592",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-CODE-PROMPT-04",
+    "study": "Generated-task API study",
+    "quantity": "CODE-PROMPT mean pre-onset accepted-failure rate",
+    "value": "0.07654766666666667",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-CODE-PROMPT-05",
+    "study": "Generated-task API study",
+    "quantity": "CODE-PROMPT mean post-onset accepted-failure rate",
+    "value": "0.10736833333333333",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-CODE-PROMPT-06",
+    "study": "Generated-task API study",
+    "quantity": "CODE-PROMPT mean post-onset claim-outcome gap",
+    "value": "0.0566045",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3-CODE-PROMPT-07",
+    "study": "Generated-task API study",
+    "quantity": "CODE-PROMPT claim-gap CI low",
+    "value": "0.04082754993686605",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": "Seed-level normal 95% interval over 10 deployments."
+  },
+  {
+    "id": "S3-CODE-PROMPT-08",
+    "study": "Generated-task API study",
+    "quantity": "CODE-PROMPT claim-gap CI high",
+    "value": "0.07238145006313396",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/study_results.json",
+    "role": "result",
+    "boundary": "Seed-level normal 95% interval over 10 deployments."
+  },
+  {
+    "id": "S3-P1-01",
+    "study": "Generated-task API study",
+    "quantity": "ARITH prompt calendar-bank endpoint hits",
+    "value": "10",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": "Within two epochs of randomized onset; all occurred at onset."
+  },
+  {
+    "id": "S3-P1-02",
+    "study": "Generated-task API study",
+    "quantity": "ARITH prompt endpoint deployments",
+    "value": "10",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P1-03",
+    "study": "Generated-task API study",
+    "quantity": "ARITH prompt median calendar-bank delay",
+    "value": "0.0",
+    "unit": "epochs after onset",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P1-04",
+    "study": "Generated-task API study",
+    "quantity": "ARITH prompt start-once claim alarms",
+    "value": "10",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P3-01",
+    "study": "Generated-task API study",
+    "quantity": "ARITH mix start-once claim alarms",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P3-02",
+    "study": "Generated-task API study",
+    "quantity": "ARITH mix calendar-bank alarms",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P3-03",
+    "study": "Generated-task API study",
+    "quantity": "ARITH mix deployments with coverage drop at least 0.15",
+    "value": "10",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P3-04",
+    "study": "Generated-task API study",
+    "quantity": "ARITH mix mean coverage drop",
+    "value": "0.2339",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P3-05",
+    "study": "Generated-task API study",
+    "quantity": "ARITH mix minimum coverage drop",
+    "value": "0.183",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P3-06",
+    "study": "Generated-task API study",
+    "quantity": "ARITH mix maximum coverage drop",
+    "value": "0.271",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P4-01",
+    "study": "Generated-task API study",
+    "quantity": "CODE prompt calendar-bank alarms",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P4-02",
+    "study": "Generated-task API study",
+    "quantity": "CODE prompt start-once claim alarms",
+    "value": "1",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P4-03",
+    "study": "Generated-task API study",
+    "quantity": "CODE prompt endpoint deployments",
+    "value": "10",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P4-04",
+    "study": "Generated-task API study",
+    "quantity": "CODE prompt recorded gap mean",
+    "value": "0.0566",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P4-05",
+    "study": "Generated-task API study",
+    "quantity": "CODE prompt recorded gap CI low",
+    "value": "0.0408",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-P4-06",
+    "study": "Generated-task API study",
+    "quantity": "CODE prompt recorded gap CI high",
+    "value": "0.0724",
+    "unit": "fraction",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "endpoint",
+    "boundary": ""
+  },
+  {
+    "id": "S3-SENS-ARITH-JUDGE_DRIFT-01",
+    "study": "Generated-task API study",
+    "quantity": "ARITH:judge_drift calendar-bank alarms at point delta",
+    "value": "10",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": ""
+  },
+  {
+    "id": "S3-SENS-ARITH-JUDGE_DRIFT-02",
+    "study": "Generated-task API study",
+    "quantity": "ARITH:judge_drift calendar-bank alarms at upper-95 delta",
+    "value": "10",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": "No verdict changed in the tested sensitivity."
+  },
+  {
+    "id": "S3-SENS-ARITH-MIX_DRIFT-01",
+    "study": "Generated-task API study",
+    "quantity": "ARITH:mix_drift calendar-bank alarms at point delta",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": ""
+  },
+  {
+    "id": "S3-SENS-ARITH-MIX_DRIFT-02",
+    "study": "Generated-task API study",
+    "quantity": "ARITH:mix_drift calendar-bank alarms at upper-95 delta",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": "No verdict changed in the tested sensitivity."
+  },
+  {
+    "id": "S3-SENS-ARITH-CONTROL-01",
+    "study": "Generated-task API study",
+    "quantity": "ARITH:control calendar-bank alarms at point delta",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": ""
+  },
+  {
+    "id": "S3-SENS-ARITH-CONTROL-02",
+    "study": "Generated-task API study",
+    "quantity": "ARITH:control calendar-bank alarms at upper-95 delta",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": "No verdict changed in the tested sensitivity."
+  },
+  {
+    "id": "S3-SENS-CODE-CONTROL-01",
+    "study": "Generated-task API study",
+    "quantity": "CODE:control calendar-bank alarms at point delta",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": ""
+  },
+  {
+    "id": "S3-SENS-CODE-CONTROL-02",
+    "study": "Generated-task API study",
+    "quantity": "CODE:control calendar-bank alarms at upper-95 delta",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": "No verdict changed in the tested sensitivity."
+  },
+  {
+    "id": "S3-SENS-CODE-JUDGE_DRIFT-01",
+    "study": "Generated-task API study",
+    "quantity": "CODE:judge_drift calendar-bank alarms at point delta",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": ""
+  },
+  {
+    "id": "S3-SENS-CODE-JUDGE_DRIFT-02",
+    "study": "Generated-task API study",
+    "quantity": "CODE:judge_drift calendar-bank alarms at upper-95 delta",
+    "value": "0",
+    "unit": "deployments",
+    "source": "evidence/the generated-task API study-study.zip::records/endpoints.json",
+    "role": "sensitivity",
+    "boundary": "No verdict changed in the tested sensitivity."
+  },
+  {
+    "id": "S3N-R01",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "Frozen protocol digest",
+    "value": "342fbc940ef10901f333f0f8f5d78a333f95ed4af55524ed477e8b2aae6da57e",
+    "unit": "sha256",
+    "source": "s3n_registration_receipt.json",
+    "role": "prospective commitment",
+    "boundary": "Author-held provider receipt"
+  },
+  {
+    "id": "S3N2-R01",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "Frozen protocol digest",
+    "value": "ac70803e3e061e44532adeaf9a70f59c54e91402cdf7670a30b5db231b54f374",
+    "unit": "sha256",
+    "source": "s3n2_registration_receipt.json",
+    "role": "prospective commitment",
+    "boundary": "Author-held provider receipt"
+  },
+  {
+    "id": "S3N-D01",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "GSM8K test SHA-256",
+    "value": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+    "unit": "sha256",
+    "source": "registration receipts and dataset manifest",
+    "role": "data provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3N-D02",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "MBPP full SHA-256",
+    "value": "ccf64ceae9c5403bf50a044cb6d505bfd2a2963ee58338ba268fd65beab92a9f",
+    "unit": "sha256",
+    "source": "s3n_registration_receipt.json",
+    "role": "data provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3N-D03",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "MBPP test SHA-256",
+    "value": "c9655f2ad152d07770cdef8efd11623a5149974f5df4578a301d91198e1b6366",
+    "unit": "sha256",
+    "source": "s3n_registration_receipt.json",
+    "role": "data provenance",
+    "boundary": ""
+  },
+  {
+    "id": "S3N-M01",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP week-zero solver pass",
+    "value": "0.7767",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M02",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP holdout performance reference m0",
+    "value": "0.8846",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M03",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP selection shrinkage delta",
+    "value": "0.0047",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M04",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP delta upper 95 sensitivity",
+    "value": "0.0778",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M05",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP accepted holdout n",
+    "value": "78",
+    "unit": "tasks",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M06",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP control deployments",
+    "value": "10",
+    "unit": "deployments",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M07",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP control score alarms",
+    "value": "0",
+    "unit": "alarms",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M08",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP control performance alarms",
+    "value": "0",
+    "unit": "alarms",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M09",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP control bank alarms",
+    "value": "0",
+    "unit": "alarms",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M10",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP prompt deployments",
+    "value": "10",
+    "unit": "deployments",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M11",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP gap mean",
+    "value": "0.0684",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M12",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP gap CI lower",
+    "value": "0.0498",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M13",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP gap CI upper",
+    "value": "0.087",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M14",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP FCR pre mean",
+    "value": "0.1132",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M15",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP FCR post mean",
+    "value": "0.1838",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M16",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP FCR post CI lower",
+    "value": "0.166",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M17",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP FCR post CI upper",
+    "value": "0.2016",
+    "unit": "fraction",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M18",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP prompt score alarms",
+    "value": "0",
+    "unit": "alarms",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M19",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP prompt bank alarms",
+    "value": "0",
+    "unit": "alarms",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M20",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP prompt performance alarms",
+    "value": "0",
+    "unit": "alarms",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N-M21",
+    "study": "Public-benchmark transport study - MBPP",
+    "quantity": "MBPP upper-delta bank alarms",
+    "value": "0",
+    "unit": "alarms",
+    "source": "s3n/records_s3n/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Task-order seeds from shared finite MBPP pool"
+  },
+  {
+    "id": "S3N2-G01",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K week-zero solver pass",
+    "value": "0.5033",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G02",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K holdout performance reference m0",
+    "value": "0.9423",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G03",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K selection shrinkage delta",
+    "value": "0.0211",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G04",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K delta upper 95 sensitivity",
+    "value": "0.0887",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G05",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K accepted holdout n",
+    "value": "52",
+    "unit": "tasks",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G06",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K control deployments",
+    "value": "5",
+    "unit": "deployments",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G07",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K control alarms per guard",
+    "value": "0",
+    "unit": "alarms",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G08",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K prompt deployments",
+    "value": "5",
+    "unit": "deployments",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G09",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K prompt bank hits",
+    "value": "5",
+    "unit": "deployments",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G10",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K prompt zero-delay bank hits",
+    "value": "5",
+    "unit": "deployments",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G11",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K prompt gap mean",
+    "value": "0.4242",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G12",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K prompt gap CI lower",
+    "value": "0.4073",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G13",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K prompt gap CI upper",
+    "value": "0.4412",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G14",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K FCR pre mean",
+    "value": "0.0861",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G15",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K FCR post mean",
+    "value": "0.4767",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G16",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K FCR post CI lower",
+    "value": "0.4573",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G17",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K FCR post CI upper",
+    "value": "0.4961",
+    "unit": "fraction",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G18",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "GSM8K upper-delta bank alarms",
+    "value": "5",
+    "unit": "alarms",
+    "source": "s3n2/records_s3n2/endpoints.json and study_results.json",
+    "role": "public benchmark evidence",
+    "boundary": "Five task-order seeds from shared finite GSM8K pool"
+  },
+  {
+    "id": "S3N2-G19",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "Randomized onset epochs",
+    "value": "5,6,6,5,5",
+    "unit": "epochs",
+    "source": "s3n2 endpoints.json",
+    "role": "design/result",
+    "boundary": ""
+  },
+  {
+    "id": "S3N2-G20",
+    "study": "Public-benchmark transport study - GSM8K",
+    "quantity": "Calendar-bank alarm epochs",
+    "value": "5,6,6,5,5",
+    "unit": "epochs",
+    "source": "s3n2 endpoints.json",
+    "role": "result",
+    "boundary": ""
+  },
+  {
+    "id": "S3N-P01",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "the MBPP public-benchmark study raw records",
+    "value": "21548",
+    "unit": "records",
+    "source": "independent_verification.json:s3n_raw.records",
+    "role": "provenance/sensitivity",
+    "boundary": "Includes partial aborted GSM control calls"
+  },
+  {
+    "id": "S3N-P02",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "the GSM8K public-benchmark study raw records",
+    "value": "16525",
+    "unit": "records",
+    "source": "independent_verification.json:s3n2_raw.records",
+    "role": "provenance/sensitivity",
+    "boundary": "75 solver parse failures suppress judge calls"
+  },
+  {
+    "id": "S3N-P03",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "the MBPP public-benchmark study materialized task rows",
+    "value": "10100",
+    "unit": "rows",
+    "source": "independent_verification.json:s3n_raw.per_task_rows",
+    "role": "provenance/sensitivity",
+    "boundary": "Includes completed MBPP and partial GSM control rows"
+  },
+  {
+    "id": "S3N-P04",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "the GSM8K public-benchmark study materialized task rows",
+    "value": "8000",
+    "unit": "rows",
+    "source": "independent_verification.json:s3n2_raw.per_task_rows",
+    "role": "provenance/sensitivity",
+    "boundary": "Complete ten deployments"
+  },
+  {
+    "id": "S3N-P05",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "GSM deployment raw calls before the MBPP public-benchmark study abort",
+    "value": "1150",
+    "unit": "calls",
+    "source": "independent_verification.json:s3n_abort_audit",
+    "role": "provenance/sensitivity",
+    "boundary": "Contradicts supplied zero-call narrative; all control condition"
+  },
+  {
+    "id": "S3N-P06",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "Materialized GSM control rows before the MBPP public-benchmark study abort",
+    "value": "500",
+    "unit": "rows",
+    "source": "independent_verification.json:s3n_abort_audit",
+    "role": "provenance/sensitivity",
+    "boundary": "Epochs 2-6 only"
+  },
+  {
+    "id": "S3N-P07",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "Non-materialized epoch-7 raw calls before abort",
+    "value": "153",
+    "unit": "calls",
+    "source": "independent_verification.json:s3n_abort_audit",
+    "role": "provenance/sensitivity",
+    "boundary": "78 solver plus 75 judge"
+  },
+  {
+    "id": "S3N-P08",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "the MBPP public-benchmark study GSM prompt-drift raw calls before abort",
+    "value": "0",
+    "unit": "calls",
+    "source": "independent_verification.json:s3n_abort_audit",
+    "role": "provenance/sensitivity",
+    "boundary": "No prior drift-arm outcome"
+  },
+  {
+    "id": "S3N-P09",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "MBPP task executions independently replayed",
+    "value": "9900",
+    "unit": "task executions",
+    "source": "independent_verification.json:mbpp_reexecution",
+    "role": "provenance/sensitivity",
+    "boundary": "Fixed PYTHONHASHSEED=0"
+  },
+  {
+    "id": "S3N-P10",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "MBPP replay matches",
+    "value": "9891",
+    "unit": "task executions",
+    "source": "independent_verification.json:mbpp_reexecution",
+    "role": "provenance/sensitivity",
+    "boundary": "Nine task-480 hash-order mismatches"
+  },
+  {
+    "id": "S3N-P11",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "MBPP replay mismatches",
+    "value": "9",
+    "unit": "task executions",
+    "source": "independent_verification.json:mbpp_reexecution",
+    "role": "provenance/sensitivity",
+    "boundary": "All one hash-order-sensitive candidate"
+  },
+  {
+    "id": "S3N-P12",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "MBPP sensitivity gap minimum",
+    "value": "0.0664",
+    "unit": "fraction",
+    "source": "independent sensitivity audit",
+    "role": "provenance/sensitivity",
+    "boundary": "All task-480 occurrences pass"
+  },
+  {
+    "id": "S3N-P13",
+    "study": "the MBPP public-benchmark study family",
+    "quantity": "MBPP sensitivity gap maximum",
+    "value": "0.0707",
+    "unit": "fraction",
+    "source": "independent sensitivity audit",
+    "role": "provenance/sensitivity",
+    "boundary": "All task-480 occurrences fail"
+  }
+]

@@ -1,0 +1,316 @@
+id,study,quantity,value,unit,source,role,boundary
+S1-C01,Controlled pricing and restart study,Beta shape a,2.2,shape,results/s1/summary.json:constants.beta_shape[0],design,
+S1-C02,Controlled pricing and restart study,Beta shape b,1.8,shape,results/s1/summary.json:constants.beta_shape[1],design,
+S1-C03,Controlled pricing and restart study,Gate threshold tau*,0.6,probability,results/s1/summary.json:constants.tau_star,design,
+S1-C04,Controlled pricing and restart study,Total alpha,0.05,probability,results/s1/summary.json:constants.alpha,design,
+S1-C05,Controlled pricing and restart study,Audits per epoch,120,labels,results/s1/summary.json:constants.audits_per_epoch,design,
+S1-C06,Controlled pricing and restart study,Primary additive shift,0.15,probability points,results/s1/summary.json:constants.primary_eps,design,
+S1-C07,Controlled pricing and restart study,Primary onset epoch,8,epoch,results/s1/summary.json:constants.primary_onset_epoch,design,
+S1-P01,Controlled pricing and restart study,Baseline coverage,0.4378659000815812,fraction,results/s1/summary.json:primary_pricing.baseline_coverage,headline,
+S1-P02,Controlled pricing and restart study,Shifted coverage,0.6594173308941428,fraction,results/s1/summary.json:primary_pricing.shifted_coverage,headline,
+S1-P03,Controlled pricing and restart study,Baseline accepted-failure rate,0.24147484462579805,fraction,results/s1/summary.json:primary_pricing.baseline_accepted_failure_rate,headline,
+S1-P04,Controlled pricing and restart study,Shifted accepted-failure rate,0.31955757703826526,fraction,results/s1/summary.json:primary_pricing.shifted_accepted_failure_rate,headline,
+S1-P05,Controlled pricing and restart study,Baseline expected cost,8.111744803130051,cost/task,results/s1/summary.json:primary_pricing.baseline_expected_cost,headline,
+S1-P06,Controlled pricing and restart study,Shifted expected cost,8.439097443198303,cost/task,results/s1/summary.json:primary_pricing.shifted_expected_cost,headline,
+S1-P07,Controlled pricing and restart study,Exact incremental cost,0.32735264006825204,cost/task,results/s1/summary.json:primary_pricing.exact_incremental_cost,headline,
+S1-P08,Controlled pricing and restart study,Monte Carlo incremental cost,0.32761714984269596,cost/task,results/s1/summary.json:primary_pricing.mc_incremental_cost,headline,
+S1-P09,Controlled pricing and restart study,Monte Carlo bootstrap CI low,0.3270064093876303,cost/task,results/s1/summary.json:primary_pricing.mc_bootstrap_95[0],uncertainty,
+S1-P10,Controlled pricing and restart study,Monte Carlo bootstrap CI high,0.3282257990440532,cost/task,results/s1/summary.json:primary_pricing.mc_bootstrap_95[1],uncertainty,
+S1-P11,Controlled pricing and restart study,All-escalate fail-safe cost,9.5,cost/task,results/s1/summary.json:primary_pricing.all_escalate_cost,operational,
+S1-P12,Controlled pricing and restart study,Fail-safe premium versus shifted gate,1.0609025568016968,cost/task,results/s1/summary.json:primary_pricing.fail_safe_premium_vs_shifted_gate,operational,
+S1-N01,Controlled pricing and restart study,Null deployments,5000,deployments,results/s1/summary.json:null.n_deployments,design,
+S1-N02,Controlled pricing and restart study,Restart-bank null alarms,16,deployments,results/s1/summary.json:null.restart_bank.alarms,headline,
+S1-N03,Controlled pricing and restart study,Restart-bank null alarm rate,0.0032,fraction,results/s1/summary.json:null.restart_bank.rate,headline,"Finite implementation check, not proof"
+S1-N04,Controlled pricing and restart study,Restart-bank null CP95 low,0.001830148659819956,fraction,results/s1/summary.json:null.restart_bank.clopper_pearson_95[0],uncertainty,
+S1-N05,Controlled pricing and restart study,Restart-bank null CP95 high,0.005191411332075068,fraction,results/s1/summary.json:null.restart_bank.clopper_pearson_95[1],uncertainty,
+S1-O01,Controlled pricing and restart study,Epoch-8 restart post-onset alarm rate,0.997,fraction,results/s1/summary.json:primary_onset.restart_bank.post_onset_alarm_rate,headline,
+S1-O02,Controlled pricing and restart study,Epoch-8 restart mean delay,155.60581745235706,audited labels,results/s1/summary.json:primary_onset.restart_bank.mean_delay_labels_among_alarms,headline,Conditional on post-onset alarm
+S1-O03,Controlled pricing and restart study,Epoch-8 restart delay CI low,151.96058174523571,audited labels,results/s1/summary.json:primary_onset.restart_bank.mean_delay_bootstrap_ci_low,uncertainty,
+S1-O04,Controlled pricing and restart study,Epoch-8 restart delay CI high,159.34122367101304,audited labels,results/s1/summary.json:primary_onset.restart_bank.mean_delay_bootstrap_ci_high,uncertainty,
+S1-O05,Controlled pricing and restart study,Epoch-8 start-once mean delay,584.5943097997892,audited labels,results/s1/summary.json:primary_onset.start_once.mean_delay_labels_among_alarms,headline,Conditional on post-onset alarm
+S1-D-0p05-01,Controlled pricing and restart study,Delay shift 0.05: predicted,1177.057835013346,audited labels,results/s1/delay_summary.csv:eps=0.05.predicted_delay,delay calibration,
+S1-D-0p05-02,Controlled pricing and restart study,Delay shift 0.05: measured mean,1194.348,audited labels,results/s1/delay_summary.csv:eps=0.05.mean_delay,delay calibration,
+S1-D-0p05-03,Controlled pricing and restart study,Delay shift 0.05: measured/predicted ratio,1.0146893079272166,ratio,results/s1/delay_summary.csv:eps=0.05.ratio,delay calibration,"First-order heuristic, not bound"
+S1-D-0p08-01,Controlled pricing and restart study,Delay shift 0.08: predicted,470.220809842038,audited labels,results/s1/delay_summary.csv:eps=0.08.predicted_delay,delay calibration,
+S1-D-0p08-02,Controlled pricing and restart study,Delay shift 0.08: measured mean,475.163,audited labels,results/s1/delay_summary.csv:eps=0.08.mean_delay,delay calibration,
+S1-D-0p08-03,Controlled pricing and restart study,Delay shift 0.08: measured/predicted ratio,1.0105103603552177,ratio,results/s1/delay_summary.csv:eps=0.08.ratio,delay calibration,"First-order heuristic, not bound"
+S1-D-0p12-01,Controlled pricing and restart study,Delay shift 0.12: predicted,216.6823942081018,audited labels,results/s1/delay_summary.csv:eps=0.12.predicted_delay,delay calibration,
+S1-D-0p12-02,Controlled pricing and restart study,Delay shift 0.12: measured mean,225.445,audited labels,results/s1/delay_summary.csv:eps=0.12.mean_delay,delay calibration,
+S1-D-0p12-03,Controlled pricing and restart study,Delay shift 0.12: measured/predicted ratio,1.0404398604876155,ratio,results/s1/delay_summary.csv:eps=0.12.ratio,delay calibration,"First-order heuristic, not bound"
+S1-D-0p15-01,Controlled pricing and restart study,Delay shift 0.15: predicted,142.92254204512986,audited labels,results/s1/delay_summary.csv:eps=0.15.predicted_delay,delay calibration,
+S1-D-0p15-02,Controlled pricing and restart study,Delay shift 0.15: measured mean,146.468,audited labels,results/s1/delay_summary.csv:eps=0.15.mean_delay,delay calibration,
+S1-D-0p15-03,Controlled pricing and restart study,Delay shift 0.15: measured/predicted ratio,1.0248068492495088,ratio,results/s1/delay_summary.csv:eps=0.15.ratio,delay calibration,"First-order heuristic, not bound"
+S1-D-0p2-01,Controlled pricing and restart study,Delay shift 0.2: predicted,84.85971593947187,audited labels,results/s1/delay_summary.csv:eps=0.2.predicted_delay,delay calibration,
+S1-D-0p2-02,Controlled pricing and restart study,Delay shift 0.2: measured mean,87.46,audited labels,results/s1/delay_summary.csv:eps=0.2.mean_delay,delay calibration,
+S1-D-0p2-03,Controlled pricing and restart study,Delay shift 0.2: measured/predicted ratio,1.0306421490072255,ratio,results/s1/delay_summary.csv:eps=0.2.ratio,delay calibration,"First-order heuristic, not bound"
+S1-LATE-restart,Controlled pricing and restart study,Epoch-12 restart_bank post-onset alarm rate,0.998,fraction,"results/s1/onset_summary.csv:onset=12,monitor=restart_bank.post_onset_alarm_rate",late-onset headline,
+S1-LATE-startonce,Controlled pricing and restart study,Epoch-12 start_once post-onset alarm rate,0.038,fraction,"results/s1/onset_summary.csv:onset=12,monitor=start_once.post_onset_alarm_rate",late-onset headline,
+S2-C01,Contract-diagnostic intervention study,Diagnostic deployments per world,1000,deployments,results/s2/diagnostic_summary.json:constants.n_reps_per_world,design,
+S2-C02,Contract-diagnostic intervention study,Diagnostic horizon,24,epochs,results/s2/diagnostic_summary.json:constants.horizon_epochs,design,
+S2-C03,Contract-diagnostic intervention study,Diagnostic onset,8,epoch,results/s2/diagnostic_summary.json:constants.onset_epoch,design,
+S2-C04,Contract-diagnostic intervention study,Alpha per contract family,0.025,probability,results/s2/diagnostic_summary.json:constants.alpha_per_guard,design,
+S2-C05,Contract-diagnostic intervention study,Uniform start weight,0.041666666666666664,weight,results/s2/diagnostic_summary.json:constants.uniform_start_weight,design,
+S2-C06,Contract-diagnostic intervention study,Segment log boundary,6.866933284461882,log e-value,results/s2/diagnostic_summary.json:constants.boundary_log,design,
+S2-C07,Contract-diagnostic intervention study,Claim lambda,0.4,lambda,results/s2/diagnostic_summary.json:constants.lambda_calibration,design,
+S2-C08,Contract-diagnostic intervention study,Performance lambda,0.24,lambda,results/s2/diagnostic_summary.json:constants.lambda_performance,design,
+S2-C09,Contract-diagnostic intervention study,Baseline performance reference m0,0.7585251553738122,pass probability,results/s2/diagnostic_summary.json:constants.m0_exact_baseline_pass,design,
+S2-N0-01,Contract-diagnostic intervention study,N0 coverage,0.4378659000815812,fraction,results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.coverage,diagnostic mechanism,
+S2-N0-02,Contract-diagnostic intervention study,N0 accepted pass rate,0.7585251553738122,fraction,results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.accepted_pass_rate,diagnostic mechanism,
+S2-N0-03,Contract-diagnostic intervention study,N0 accepted failure rate,0.2414748446261878,fraction,results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.accepted_failure_rate,diagnostic mechanism,
+S2-N0-04,Contract-diagnostic intervention study,N0 claim gap,0.0,probability,results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.mean_claim_gap,diagnostic mechanism,
+S2-N0-05,Contract-diagnostic intervention study,N0 performance gap,0.0,probability,results/s2/diagnostic_exact_worlds.csv:world=N0_stationary_null.performance_gap_vs_m0,diagnostic mechanism,
+S2-N0-SIG-neither,Contract-diagnostic intervention study,N0 signature neither,1.0,fraction,results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.neither.rate,diagnostic headline,
+S2-N0-SIG-calibration_only,Contract-diagnostic intervention study,N0 signature calibration_only,0.0,fraction,results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.calibration_only.rate,diagnostic headline,
+S2-N0-SIG-performance_only,Contract-diagnostic intervention study,N0 signature performance_only,0.0,fraction,results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.performance_only.rate,diagnostic headline,
+S2-N0-SIG-both,Contract-diagnostic intervention study,N0 signature both,0.0,fraction,results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.both.rate,diagnostic headline,
+S2-N0-SIG-pre_onset_alarm,Contract-diagnostic intervention study,N0 signature pre_onset_alarm,0.0,fraction,results/s2/diagnostic_summary.json:worlds.N0_stationary_null.signatures.pre_onset_alarm.rate,diagnostic headline,
+S2-J1-01,Contract-diagnostic intervention study,J1 coverage,0.6594173308941428,fraction,results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.coverage,diagnostic mechanism,
+S2-J1-02,Contract-diagnostic intervention study,J1 accepted pass rate,0.6804424229611037,fraction,results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.accepted_pass_rate,diagnostic mechanism,
+S2-J1-03,Contract-diagnostic intervention study,J1 accepted failure rate,0.3195575770388963,fraction,results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.accepted_failure_rate,diagnostic mechanism,
+S2-J1-04,Contract-diagnostic intervention study,J1 claim gap,0.1420559230299681,probability,results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.mean_claim_gap,diagnostic mechanism,
+S2-J1-05,Contract-diagnostic intervention study,J1 performance gap,0.0780827324127084,probability,results/s2/diagnostic_exact_worlds.csv:world=J1_judge_overconfidence.performance_gap_vs_m0,diagnostic mechanism,
+S2-J1-SIG-neither,Contract-diagnostic intervention study,J1 signature neither,0.0,fraction,results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.neither.rate,diagnostic headline,
+S2-J1-SIG-calibration_only,Contract-diagnostic intervention study,J1 signature calibration_only,0.0,fraction,results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.calibration_only.rate,diagnostic headline,
+S2-J1-SIG-performance_only,Contract-diagnostic intervention study,J1 signature performance_only,0.0,fraction,results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.performance_only.rate,diagnostic headline,
+S2-J1-SIG-both,Contract-diagnostic intervention study,J1 signature both,0.999,fraction,results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.both.rate,diagnostic headline,
+S2-J1-SIG-pre_onset_alarm,Contract-diagnostic intervention study,J1 signature pre_onset_alarm,0.001,fraction,results/s2/diagnostic_summary.json:worlds.J1_judge_overconfidence.signatures.pre_onset_alarm.rate,diagnostic headline,
+S2-W2-01,Contract-diagnostic intervention study,W2 coverage,0.064,fraction,results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.coverage,diagnostic mechanism,
+S2-W2-02,Contract-diagnostic intervention study,W2 accepted pass rate,0.6999999999999995,fraction,results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.accepted_pass_rate,diagnostic mechanism,
+S2-W2-03,Contract-diagnostic intervention study,W2 accepted failure rate,0.3000000000000005,fraction,results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.accepted_failure_rate,diagnostic mechanism,
+S2-W2-04,Contract-diagnostic intervention study,W2 claim gap,0.0,probability,results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.mean_claim_gap,diagnostic mechanism,
+S2-W2-05,Contract-diagnostic intervention study,W2 performance gap,0.0585251553738126,probability,results/s2/diagnostic_exact_worlds.csv:world=W2_honest_workload_hardening.performance_gap_vs_m0,diagnostic mechanism,
+S2-W2-SIG-neither,Contract-diagnostic intervention study,W2 signature neither,0.026,fraction,results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.neither.rate,diagnostic headline,
+S2-W2-SIG-calibration_only,Contract-diagnostic intervention study,W2 signature calibration_only,0.0,fraction,results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.calibration_only.rate,diagnostic headline,
+S2-W2-SIG-performance_only,Contract-diagnostic intervention study,W2 signature performance_only,0.966,fraction,results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.performance_only.rate,diagnostic headline,
+S2-W2-SIG-both,Contract-diagnostic intervention study,W2 signature both,0.006,fraction,results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.both.rate,diagnostic headline,
+S2-W2-SIG-pre_onset_alarm,Contract-diagnostic intervention study,W2 signature pre_onset_alarm,0.002,fraction,results/s2/diagnostic_summary.json:worlds.W2_honest_workload_hardening.signatures.pre_onset_alarm.rate,diagnostic headline,
+S2-M3-01,Contract-diagnostic intervention study,M3 coverage,0.878246764862047,fraction,results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.coverage,diagnostic mechanism,
+S2-M3-02,Contract-diagnostic intervention study,M3 accepted pass rate,0.7716756360219931,fraction,results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.accepted_pass_rate,diagnostic mechanism,
+S2-M3-03,Contract-diagnostic intervention study,M3 accepted failure rate,0.2283243639780069,fraction,results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.accepted_failure_rate,diagnostic mechanism,
+S2-M3-04,Contract-diagnostic intervention study,M3 claim gap,0.1223481412254751,probability,results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.mean_claim_gap,diagnostic mechanism,
+S2-M3-05,Contract-diagnostic intervention study,M3 performance gap,-0.0131504806481809,probability,results/s2/diagnostic_exact_worlds.csv:world=M3_masked_calibration_break.performance_gap_vs_m0,diagnostic mechanism,
+S2-M3-SIG-neither,Contract-diagnostic intervention study,M3 signature neither,0.0,fraction,results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.neither.rate,diagnostic headline,
+S2-M3-SIG-calibration_only,Contract-diagnostic intervention study,M3 signature calibration_only,0.999,fraction,results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.calibration_only.rate,diagnostic headline,
+S2-M3-SIG-performance_only,Contract-diagnostic intervention study,M3 signature performance_only,0.0,fraction,results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.performance_only.rate,diagnostic headline,
+S2-M3-SIG-both,Contract-diagnostic intervention study,M3 signature both,0.0,fraction,results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.both.rate,diagnostic headline,
+S2-M3-SIG-pre_onset_alarm,Contract-diagnostic intervention study,M3 signature pre_onset_alarm,0.001,fraction,results/s2/diagnostic_summary.json:worlds.M3_masked_calibration_break.signatures.pre_onset_alarm.rate,diagnostic headline,
+S2-N0-CAL-POST,Contract-diagnostic intervention study,N0 calibration post-onset alarm rate,0.0,fraction,"results/s2/diagnostic_guard_summary.csv:world=N0_stationary_null,guard=calibration.post_onset_rate",diagnostic result,
+S2-N0-CAL-DELAY,Contract-diagnostic intervention study,N0 calibration mean delay,,audited labels,"results/s2/diagnostic_guard_summary.csv:world=N0_stationary_null,guard=calibration.mean_delay_labels",diagnostic result,Conditional on post-onset alarm
+S2-N0-PERF-POST,Contract-diagnostic intervention study,N0 performance post-onset alarm rate,0.0,fraction,"results/s2/diagnostic_guard_summary.csv:world=N0_stationary_null,guard=performance.post_onset_rate",diagnostic result,
+S2-N0-PERF-DELAY,Contract-diagnostic intervention study,N0 performance mean delay,,audited labels,"results/s2/diagnostic_guard_summary.csv:world=N0_stationary_null,guard=performance.mean_delay_labels",diagnostic result,Conditional on post-onset alarm
+S2-J1-CAL-POST,Contract-diagnostic intervention study,J1 calibration post-onset alarm rate,0.999,fraction,"results/s2/diagnostic_guard_summary.csv:world=J1_judge_overconfidence,guard=calibration.post_onset_rate",diagnostic result,
+S2-J1-CAL-DELAY,Contract-diagnostic intervention study,J1 calibration mean delay,184.5715715715716,audited labels,"results/s2/diagnostic_guard_summary.csv:world=J1_judge_overconfidence,guard=calibration.mean_delay_labels",diagnostic result,Conditional on post-onset alarm
+S2-J1-PERF-POST,Contract-diagnostic intervention study,J1 performance post-onset alarm rate,0.999,fraction,"results/s2/diagnostic_guard_summary.csv:world=J1_judge_overconfidence,guard=performance.post_onset_rate",diagnostic result,
+S2-J1-PERF-DELAY,Contract-diagnostic intervention study,J1 performance mean delay,572.047047047047,audited labels,"results/s2/diagnostic_guard_summary.csv:world=J1_judge_overconfidence,guard=performance.mean_delay_labels",diagnostic result,Conditional on post-onset alarm
+S2-W2-CAL-POST,Contract-diagnostic intervention study,W2 calibration post-onset alarm rate,0.006,fraction,"results/s2/diagnostic_guard_summary.csv:world=W2_honest_workload_hardening,guard=calibration.post_onset_rate",diagnostic result,
+S2-W2-CAL-DELAY,Contract-diagnostic intervention study,W2 calibration mean delay,1185.5,audited labels,"results/s2/diagnostic_guard_summary.csv:world=W2_honest_workload_hardening,guard=calibration.mean_delay_labels",diagnostic result,Conditional on post-onset alarm
+S2-W2-PERF-POST,Contract-diagnostic intervention study,W2 performance post-onset alarm rate,0.972,fraction,"results/s2/diagnostic_guard_summary.csv:world=W2_honest_workload_hardening,guard=performance.post_onset_rate",diagnostic result,
+S2-W2-PERF-DELAY,Contract-diagnostic intervention study,W2 performance mean delay,859.2530864197531,audited labels,"results/s2/diagnostic_guard_summary.csv:world=W2_honest_workload_hardening,guard=performance.mean_delay_labels",diagnostic result,Conditional on post-onset alarm
+S2-M3-CAL-POST,Contract-diagnostic intervention study,M3 calibration post-onset alarm rate,0.999,fraction,"results/s2/diagnostic_guard_summary.csv:world=M3_masked_calibration_break,guard=calibration.post_onset_rate",diagnostic result,
+S2-M3-CAL-DELAY,Contract-diagnostic intervention study,M3 calibration mean delay,238.1201201201201,audited labels,"results/s2/diagnostic_guard_summary.csv:world=M3_masked_calibration_break,guard=calibration.mean_delay_labels",diagnostic result,Conditional on post-onset alarm
+S2-M3-PERF-POST,Contract-diagnostic intervention study,M3 performance post-onset alarm rate,0.0,fraction,"results/s2/diagnostic_guard_summary.csv:world=M3_masked_calibration_break,guard=performance.post_onset_rate",diagnostic result,
+S2-M3-PERF-DELAY,Contract-diagnostic intervention study,M3 performance mean delay,,audited labels,"results/s2/diagnostic_guard_summary.csv:world=M3_masked_calibration_break,guard=performance.mean_delay_labels",diagnostic result,Conditional on post-onset alarm
+API-C01,API-pilot record audit,Task rows,2880,rows,results/real_model/real_model_record_audit.json:checks.row_count.observed,record integrity,
+API-C02,API-pilot record audit,Run-epoch cells,24,cells,derived from 3 runs x 8 epochs,record integrity,
+API-C03,API-pilot record audit,Tasks per run-epoch,120,tasks,results/real_model/real_model_record_audit.json,record integrity,
+API-C04,API-pilot record audit,Released audit flags,1974,rows,results/real_model/real_model_record_audit.json:checks.audit_flag_mismatches.supplied_audit_total,record integrity,
+API-C05,API-pilot record audit,Reconstructed actual audits,1953,rows,results/real_model/real_model_record_audit.json:checks.audit_flag_mismatches.reconstructed_audit_total,record integrity,
+API-C06,API-pilot record audit,Audit-flag mismatches,21,rows,results/real_model/real_model_record_audit.json:checks.audit_flag_mismatches.count,record integrity,
+API-C07,API-pilot record audit,Week-zero accepted tasks,169,tasks,results/real_model/real_model_record_audit.json:week0.accepted,calibration input,
+API-C08,API-pilot record audit,Week-zero successes,167,tasks,results/real_model/real_model_record_audit.json:week0.successes,calibration input,
+API-C09,API-pilot record audit,Point m0,0.9882,probability,results/real_model/real_model_record_audit.json:week0.m0_point,pilot reference,
+API-C10,API-pilot record audit,One-sided 99% CP lower m0,0.9511940097984064,probability,results/real_model/real_model_record_audit.json:week0.one_sided_cp99_lower,sensitivity,
+API-A-01,API-pilot,Run A pooled FCR pre,0.0203488372093023,fraction,results/real_model/real_model_run_summary.csv:run=A.pooled_fcr_pre,external mechanism,
+API-A-02,API-pilot,Run A pooled FCR post,0.0148809523809523,fraction,results/real_model/real_model_run_summary.csv:run=A.pooled_fcr_post,external mechanism,
+API-A-03,API-pilot,Run A pooled coverage pre,0.7166666666666667,fraction,results/real_model/real_model_run_summary.csv:run=A.pooled_coverage_pre,external mechanism,
+API-A-04,API-pilot,Run A pooled coverage post,0.7,fraction,results/real_model/real_model_run_summary.csv:run=A.pooled_coverage_post,external mechanism,
+API-A-calibration_bank,API-pilot,Run A claim first alarm post-onset audit,,audited labels,results/real_model/real_model_bank_reanalysis.json:monitors.A.calibration_bank.first_alarm.post_onset_audit_index,external mechanism,Descriptive; finite calibration stage not certified
+API-A-performance_bank_m0_point,API-pilot,Run A performance first alarm post-onset audit,,audited labels,results/real_model/real_model_bank_reanalysis.json:monitors.A.performance_bank_m0_point.first_alarm.post_onset_audit_index,external mechanism,Descriptive; finite calibration stage not certified
+API-A-performance_bank_m0_cp99_lower,API-pilot,Run A performance conservative first alarm post-onset audit,,audited labels,results/real_model/real_model_bank_reanalysis.json:monitors.A.performance_bank_m0_cp99_lower.first_alarm.post_onset_audit_index,external mechanism,Descriptive; finite calibration stage not certified
+API-B-01,API-pilot,Run B pooled FCR pre,0.0179104477611939,fraction,results/real_model/real_model_run_summary.csv:run=B.pooled_fcr_pre,external mechanism,
+API-B-02,API-pilot,Run B pooled FCR post,0.2777777777777778,fraction,results/real_model/real_model_run_summary.csv:run=B.pooled_fcr_post,external mechanism,
+API-B-03,API-pilot,Run B pooled coverage pre,0.6979166666666666,fraction,results/real_model/real_model_run_summary.csv:run=B.pooled_coverage_pre,external mechanism,
+API-B-04,API-pilot,Run B pooled coverage post,0.9375,fraction,results/real_model/real_model_run_summary.csv:run=B.pooled_coverage_post,external mechanism,
+API-B-calibration_bank,API-pilot,Run B claim first alarm post-onset audit,75,audited labels,results/real_model/real_model_bank_reanalysis.json:monitors.B.calibration_bank.first_alarm.post_onset_audit_index,external mechanism,Descriptive; finite calibration stage not certified
+API-B-performance_bank_m0_point,API-pilot,Run B performance first alarm post-onset audit,114,audited labels,results/real_model/real_model_bank_reanalysis.json:monitors.B.performance_bank_m0_point.first_alarm.post_onset_audit_index,external mechanism,Descriptive; finite calibration stage not certified
+API-B-performance_bank_m0_cp99_lower,API-pilot,Run B performance conservative first alarm post-onset audit,123,audited labels,results/real_model/real_model_bank_reanalysis.json:monitors.B.performance_bank_m0_cp99_lower.first_alarm.post_onset_audit_index,external mechanism,Descriptive; finite calibration stage not certified
+API-C-01,API-pilot,Run C pooled FCR pre,0.0060240963855421,fraction,results/real_model/real_model_run_summary.csv:run=C.pooled_fcr_pre,external mechanism,
+API-C-02,API-pilot,Run C pooled FCR post,0.0485436893203883,fraction,results/real_model/real_model_run_summary.csv:run=C.pooled_fcr_post,external mechanism,
+API-C-03,API-pilot,Run C pooled coverage pre,0.6916666666666667,fraction,results/real_model/real_model_run_summary.csv:run=C.pooled_coverage_pre,external mechanism,
+API-C-04,API-pilot,Run C pooled coverage post,0.4291666666666666,fraction,results/real_model/real_model_run_summary.csv:run=C.pooled_coverage_post,external mechanism,
+API-C-calibration_bank,API-pilot,Run C claim first alarm post-onset audit,,audited labels,results/real_model/real_model_bank_reanalysis.json:monitors.C.calibration_bank.first_alarm.post_onset_audit_index,external mechanism,Descriptive; finite calibration stage not certified
+API-C-performance_bank_m0_point,API-pilot,Run C performance first alarm post-onset audit,,audited labels,results/real_model/real_model_bank_reanalysis.json:monitors.C.performance_bank_m0_point.first_alarm.post_onset_audit_index,external mechanism,Descriptive; finite calibration stage not certified
+API-C-performance_bank_m0_cp99_lower,API-pilot,Run C performance conservative first alarm post-onset audit,,audited labels,results/real_model/real_model_bank_reanalysis.json:monitors.C.performance_bank_m0_cp99_lower.first_alarm.post_onset_audit_index,external mechanism,Descriptive; finite calibration stage not certified
+EXT-RAMP-1,Fable v2.2 secondary records,Ramp measured/(D+R) ratio 1,1.027,ratio,external/fable_v2_2/results/extension/ramp_delays.csv,secondary robustness,
+EXT-RAMP-2,Fable v2.2 secondary records,Ramp measured/(D+R) ratio 2,1.02,ratio,external/fable_v2_2/results/extension/ramp_delays.csv,secondary robustness,
+EXT-RAMP-3,Fable v2.2 secondary records,Ramp measured/(D+R) ratio 3,0.992,ratio,external/fable_v2_2/results/extension/ramp_delays.csv,secondary robustness,
+EXT-RAMP-4,Fable v2.2 secondary records,Ramp measured/(D+R) ratio 4,0.982,ratio,external/fable_v2_2/results/extension/ramp_delays.csv,secondary robustness,
+EXT-MIX-0p05,Fable v2.2 secondary records,Lambda-mixture delay premium at gap 0.05,1.28,ratio,external/fable_v2_2/results/extension/mixture_delays.csv,secondary robustness,
+EXT-MIX-0p08,Fable v2.2 secondary records,Lambda-mixture delay premium at gap 0.08,1.276,ratio,external/fable_v2_2/results/extension/mixture_delays.csv,secondary robustness,
+EXT-MIX-0p12,Fable v2.2 secondary records,Lambda-mixture delay premium at gap 0.12,1.24,ratio,external/fable_v2_2/results/extension/mixture_delays.csv,secondary robustness,
+EXT-MIX-0p2,Fable v2.2 secondary records,Lambda-mixture delay premium at gap 0.2,1.224,ratio,external/fable_v2_2/results/extension/mixture_delays.csv,secondary robustness,
+EXT-2S-UP,Fable v2.2 secondary records,Underconfidence upward-process alarm rate,0.92,fraction,external/fable_v2_2/results/pilot_arms/offline_arms.json:two_sided_w4.up_alarm_rate,exploratory boundary,No inherited anytime guarantee
+EXT-2S-DOWN,Fable v2.2 secondary records,Underconfidence downward-process alarm rate,0.04,fraction,external/fable_v2_2/results/pilot_arms/offline_arms.json:two_sided_w4.down_alarm_rate,exploratory boundary,No inherited anytime guarantee
+S3-D01,Generated-task API study,Protocol-and-analysis SHA-256,1a8b15039ed5d34fae36b9320aebd8e34fc4cebe713c678ab2a2fa51a08a0e92,sha256,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,Author-controlled pre-execution hash; not independent registry status.
+S3-D02,Generated-task API study,Model snapshot,claude-haiku-4-5-20251001,model id,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,One provider and model snapshot.
+S3-D03,Generated-task API study,Task domains,2,domains,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,Generated arithmetic and generated code specifications.
+S3-D04,Generated-task API study,Week-zero tasks per domain,300,tasks/domain,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D05,Generated-task API study,Calibration-fit rows per domain,200,rows/domain,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D06,Generated-task API study,Holdout rows per domain,100,rows/domain,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D07,Generated-task API study,Deployments,50,deployments,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D08,Generated-task API study,Conditions,5,condition cells,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D09,Generated-task API study,Deployments per condition,10,deployments/condition,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D10,Generated-task API study,Deployment epochs,8,epochs,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,Epochs 2 through 9 inclusive.
+S3-D11,Generated-task API study,Tasks per epoch,100,tasks/epoch,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D12,Generated-task API study,Randomized onset support,"4,5,6,7",epochs,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D13,Generated-task API study,Calendar-bank start epochs,"2,5,8",epochs,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D14,Generated-task API study,Guard alpha,0.05,probability,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D15,Generated-task API study,Guard lambda,0.32,parameter,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,
+S3-D16,Generated-task API study,Hidden code tests per task,6,tests/task,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,Tests do not constitute a complete formal specification.
+S3-D17,Generated-task API study,Code subprocess timeout,5,seconds/task,evidence/the generated-task API study-study.zip::PROTOCOL.md,design,Not a hardened security sandbox.
+S3-D18,Generated-task API study,API calls,81200,calls,evidence/the generated-task API study-study.zip::records/endpoints.json,provenance,
+S3-D19,Generated-task API study,Solver calls,40600,calls,evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz,provenance,
+S3-D20,Generated-task API study,Judge calls,40600,calls,evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz,provenance,
+S3-D21,Generated-task API study,Input tokens,8536163,tokens,evidence/the generated-task API study-study.zip::records/endpoints.json,provenance,
+S3-D22,Generated-task API study,Output tokens,6878249,tokens,evidence/the generated-task API study-study.zip::records/endpoints.json,provenance,
+S3-D23,Generated-task API study,Recorded run duration,180.5,minutes,evidence/the generated-task API study-study.zip::records/endpoints.json,provenance,
+S3-D24,Generated-task API study,Raw provider response rows,81200,records,evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz,provenance,
+S3-D25,Generated-task API study,Unique provider request IDs,81200,identifiers,evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz,provenance,"Group-level reconciliation, not exact task-row linkage."
+S3-D26,Generated-task API study,Unique provider message IDs,81200,identifiers,evidence/the generated-task API study-study.zip::records/raw_responses.jsonl.gz,provenance,"Group-level reconciliation, not exact task-row linkage."
+S3-D27,Generated-task API study,Per-task rows,40000,rows,evidence/the generated-task API study-study.zip::records/study_per_task.csv,provenance,
+S3-D28,Generated-task API study,Accepted and audited rows,27809,rows,evidence/the generated-task API study-study.zip::records/study_per_task.csv,provenance,
+S3-D29,Generated-task API study,Registration request ID,req_011Ce1ZYbFX4RicRje5S1wH5,provider request id,evidence/the generated-task API study-study.zip::registration_receipt.json,provenance,Supports chronology; request body is not independently attested.
+S3-D30,Generated-task API study,Registration timestamp,2026-08-13T22:47:45Z,UTC,evidence/the generated-task API study-study.zip::registration_receipt.json,provenance,Author-held provider-response receipt.
+S3-W0-ARITH-01,Generated-task API study,ARITH all-task week-zero pass rate,0.6733,fraction,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-W0-ARITH-02,Generated-task API study,ARITH Platt intercept,-1.3329955528138762,coefficient,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-W0-ARITH-03,Generated-task API study,ARITH Platt slope,2.4202471227854243,coefficient,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-W0-ARITH-04,Generated-task API study,ARITH accepted-cohort performance reference m0,1.0,probability,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,Finite plug-in holdout reference.
+S3-W0-ARITH-05,Generated-task API study,ARITH selection-shrinkage point delta,0.0,probability,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-W0-ARITH-06,Generated-task API study,ARITH selection-shrinkage upper 95% value,0.0,probability,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,Sensitivity value; not full uncertainty propagation.
+S3-W0-ARITH-07,Generated-task API study,ARITH accepted holdout rows,69,rows,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-W0-CODE-01,Generated-task API study,CODE all-task week-zero pass rate,0.7067,fraction,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-W0-CODE-02,Generated-task API study,CODE Platt intercept,0.4183202924961456,coefficient,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-W0-CODE-03,Generated-task API study,CODE Platt slope,1.1830498085566326,coefficient,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-W0-CODE-04,Generated-task API study,CODE accepted-cohort performance reference m0,0.9231,probability,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,Finite plug-in holdout reference.
+S3-W0-CODE-05,Generated-task API study,CODE selection-shrinkage point delta,0.007,probability,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-W0-CODE-06,Generated-task API study,CODE selection-shrinkage upper 95% value,0.0844,probability,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,Sensitivity value; not full uncertainty propagation.
+S3-W0-CODE-07,Generated-task API study,CODE accepted holdout rows,65,rows,evidence/the generated-task API study-study.zip::records/endpoints.json,calibration,
+S3-ARITH-CTRL-01,Generated-task API study,ARITH control mean coverage,0.70525,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-CTRL-02,Generated-task API study,ARITH control mean accepted-failure rate,0.01690375,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-CTRL-03,Generated-task API study,ARITH control start-once claim alarms,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,result,10 deployments.
+S3-ARITH-CTRL-04,Generated-task API study,ARITH control performance alarms,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,result,10 deployments.
+S3-ARITH-CTRL-05,Generated-task API study,ARITH control calendar-bank alarms,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,result,10 deployments.
+S3-CODE-CTRL-01,Generated-task API study,CODE control mean coverage,0.688625,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-CODE-CTRL-02,Generated-task API study,CODE control mean accepted-failure rate,0.086885,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-CODE-CTRL-03,Generated-task API study,CODE control start-once claim alarms,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,result,10 deployments.
+S3-CODE-CTRL-04,Generated-task API study,CODE control performance alarms,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,result,10 deployments.
+S3-CODE-CTRL-05,Generated-task API study,CODE control calendar-bank alarms,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,result,10 deployments.
+S3-ARITH-PROMPT-01,Generated-task API study,ARITH-PROMPT mean pre-onset coverage,0.6977666666666666,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-PROMPT-02,Generated-task API study,ARITH-PROMPT mean post-onset coverage,0.9430666666666667,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-PROMPT-03,Generated-task API study,ARITH-PROMPT mean coverage change,0.24530000000000007,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-PROMPT-04,Generated-task API study,ARITH-PROMPT mean pre-onset accepted-failure rate,0.018332166666666667,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-PROMPT-05,Generated-task API study,ARITH-PROMPT mean post-onset accepted-failure rate,0.3047148333333333,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-PROMPT-06,Generated-task API study,ARITH-PROMPT mean post-onset claim-outcome gap,0.3017276666666666,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-PROMPT-07,Generated-task API study,ARITH-PROMPT claim-gap CI low,0.29361356399489086,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,Seed-level normal 95% interval over 10 deployments.
+S3-ARITH-PROMPT-08,Generated-task API study,ARITH-PROMPT claim-gap CI high,0.3098417693384424,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,Seed-level normal 95% interval over 10 deployments.
+S3-ARITH-MIX-01,Generated-task API study,ARITH-MIX mean pre-onset coverage,0.6898833333333333,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-MIX-02,Generated-task API study,ARITH-MIX mean post-onset coverage,0.4559666666666666,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-MIX-03,Generated-task API study,ARITH-MIX mean coverage change,-0.23391666666666672,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-MIX-04,Generated-task API study,ARITH-MIX mean pre-onset accepted-failure rate,0.014241333333333333,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-MIX-05,Generated-task API study,ARITH-MIX mean post-onset accepted-failure rate,0.03209649999999999,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-MIX-06,Generated-task API study,ARITH-MIX mean post-onset claim-outcome gap,0.010362166666666651,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-ARITH-MIX-07,Generated-task API study,ARITH-MIX claim-gap CI low,0.006194333244128077,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,Seed-level normal 95% interval over 10 deployments.
+S3-ARITH-MIX-08,Generated-task API study,ARITH-MIX claim-gap CI high,0.014530000089205226,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,Seed-level normal 95% interval over 10 deployments.
+S3-CODE-PROMPT-01,Generated-task API study,CODE-PROMPT mean pre-onset coverage,0.7011999999999999,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-CODE-PROMPT-02,Generated-task API study,CODE-PROMPT mean post-onset coverage,0.6894333333333333,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-CODE-PROMPT-03,Generated-task API study,CODE-PROMPT mean coverage change,-0.011766666666666592,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-CODE-PROMPT-04,Generated-task API study,CODE-PROMPT mean pre-onset accepted-failure rate,0.07654766666666667,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-CODE-PROMPT-05,Generated-task API study,CODE-PROMPT mean post-onset accepted-failure rate,0.10736833333333333,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-CODE-PROMPT-06,Generated-task API study,CODE-PROMPT mean post-onset claim-outcome gap,0.0566045,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,
+S3-CODE-PROMPT-07,Generated-task API study,CODE-PROMPT claim-gap CI low,0.04082754993686605,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,Seed-level normal 95% interval over 10 deployments.
+S3-CODE-PROMPT-08,Generated-task API study,CODE-PROMPT claim-gap CI high,0.07238145006313396,fraction,evidence/the generated-task API study-study.zip::records/study_results.json,result,Seed-level normal 95% interval over 10 deployments.
+S3-P1-01,Generated-task API study,ARITH prompt calendar-bank endpoint hits,10,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,Within two epochs of randomized onset; all occurred at onset.
+S3-P1-02,Generated-task API study,ARITH prompt endpoint deployments,10,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P1-03,Generated-task API study,ARITH prompt median calendar-bank delay,0.0,epochs after onset,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P1-04,Generated-task API study,ARITH prompt start-once claim alarms,10,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P3-01,Generated-task API study,ARITH mix start-once claim alarms,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P3-02,Generated-task API study,ARITH mix calendar-bank alarms,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P3-03,Generated-task API study,ARITH mix deployments with coverage drop at least 0.15,10,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P3-04,Generated-task API study,ARITH mix mean coverage drop,0.2339,fraction,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P3-05,Generated-task API study,ARITH mix minimum coverage drop,0.183,fraction,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P3-06,Generated-task API study,ARITH mix maximum coverage drop,0.271,fraction,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P4-01,Generated-task API study,CODE prompt calendar-bank alarms,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P4-02,Generated-task API study,CODE prompt start-once claim alarms,1,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P4-03,Generated-task API study,CODE prompt endpoint deployments,10,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P4-04,Generated-task API study,CODE prompt recorded gap mean,0.0566,fraction,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P4-05,Generated-task API study,CODE prompt recorded gap CI low,0.0408,fraction,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-P4-06,Generated-task API study,CODE prompt recorded gap CI high,0.0724,fraction,evidence/the generated-task API study-study.zip::records/endpoints.json,endpoint,
+S3-SENS-ARITH-JUDGE_DRIFT-01,Generated-task API study,ARITH:judge_drift calendar-bank alarms at point delta,10,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,
+S3-SENS-ARITH-JUDGE_DRIFT-02,Generated-task API study,ARITH:judge_drift calendar-bank alarms at upper-95 delta,10,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,No verdict changed in the tested sensitivity.
+S3-SENS-ARITH-MIX_DRIFT-01,Generated-task API study,ARITH:mix_drift calendar-bank alarms at point delta,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,
+S3-SENS-ARITH-MIX_DRIFT-02,Generated-task API study,ARITH:mix_drift calendar-bank alarms at upper-95 delta,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,No verdict changed in the tested sensitivity.
+S3-SENS-ARITH-CONTROL-01,Generated-task API study,ARITH:control calendar-bank alarms at point delta,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,
+S3-SENS-ARITH-CONTROL-02,Generated-task API study,ARITH:control calendar-bank alarms at upper-95 delta,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,No verdict changed in the tested sensitivity.
+S3-SENS-CODE-CONTROL-01,Generated-task API study,CODE:control calendar-bank alarms at point delta,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,
+S3-SENS-CODE-CONTROL-02,Generated-task API study,CODE:control calendar-bank alarms at upper-95 delta,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,No verdict changed in the tested sensitivity.
+S3-SENS-CODE-JUDGE_DRIFT-01,Generated-task API study,CODE:judge_drift calendar-bank alarms at point delta,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,
+S3-SENS-CODE-JUDGE_DRIFT-02,Generated-task API study,CODE:judge_drift calendar-bank alarms at upper-95 delta,0,deployments,evidence/the generated-task API study-study.zip::records/endpoints.json,sensitivity,No verdict changed in the tested sensitivity.
+S3N-R01,Public-benchmark transport study - MBPP,Frozen protocol digest,342fbc940ef10901f333f0f8f5d78a333f95ed4af55524ed477e8b2aae6da57e,sha256,s3n_registration_receipt.json,prospective commitment,Author-held provider receipt
+S3N2-R01,Public-benchmark transport study - GSM8K,Frozen protocol digest,ac70803e3e061e44532adeaf9a70f59c54e91402cdf7670a30b5db231b54f374,sha256,s3n2_registration_receipt.json,prospective commitment,Author-held provider receipt
+S3N-D01,the MBPP public-benchmark study family,GSM8K test SHA-256,3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14,sha256,registration receipts and dataset manifest,data provenance,
+S3N-D02,the MBPP public-benchmark study family,MBPP full SHA-256,ccf64ceae9c5403bf50a044cb6d505bfd2a2963ee58338ba268fd65beab92a9f,sha256,s3n_registration_receipt.json,data provenance,
+S3N-D03,the MBPP public-benchmark study family,MBPP test SHA-256,c9655f2ad152d07770cdef8efd11623a5149974f5df4578a301d91198e1b6366,sha256,s3n_registration_receipt.json,data provenance,
+S3N-M01,Public-benchmark transport study - MBPP,MBPP week-zero solver pass,0.7767,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M02,Public-benchmark transport study - MBPP,MBPP holdout performance reference m0,0.8846,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M03,Public-benchmark transport study - MBPP,MBPP selection shrinkage delta,0.0047,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M04,Public-benchmark transport study - MBPP,MBPP delta upper 95 sensitivity,0.0778,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M05,Public-benchmark transport study - MBPP,MBPP accepted holdout n,78,tasks,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M06,Public-benchmark transport study - MBPP,MBPP control deployments,10,deployments,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M07,Public-benchmark transport study - MBPP,MBPP control score alarms,0,alarms,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M08,Public-benchmark transport study - MBPP,MBPP control performance alarms,0,alarms,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M09,Public-benchmark transport study - MBPP,MBPP control bank alarms,0,alarms,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M10,Public-benchmark transport study - MBPP,MBPP prompt deployments,10,deployments,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M11,Public-benchmark transport study - MBPP,MBPP gap mean,0.0684,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M12,Public-benchmark transport study - MBPP,MBPP gap CI lower,0.0498,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M13,Public-benchmark transport study - MBPP,MBPP gap CI upper,0.087,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M14,Public-benchmark transport study - MBPP,MBPP FCR pre mean,0.1132,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M15,Public-benchmark transport study - MBPP,MBPP FCR post mean,0.1838,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M16,Public-benchmark transport study - MBPP,MBPP FCR post CI lower,0.166,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M17,Public-benchmark transport study - MBPP,MBPP FCR post CI upper,0.2016,fraction,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M18,Public-benchmark transport study - MBPP,MBPP prompt score alarms,0,alarms,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M19,Public-benchmark transport study - MBPP,MBPP prompt bank alarms,0,alarms,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M20,Public-benchmark transport study - MBPP,MBPP prompt performance alarms,0,alarms,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N-M21,Public-benchmark transport study - MBPP,MBPP upper-delta bank alarms,0,alarms,s3n/records_s3n/endpoints.json and study_results.json,public benchmark evidence,Task-order seeds from shared finite MBPP pool
+S3N2-G01,Public-benchmark transport study - GSM8K,GSM8K week-zero solver pass,0.5033,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G02,Public-benchmark transport study - GSM8K,GSM8K holdout performance reference m0,0.9423,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G03,Public-benchmark transport study - GSM8K,GSM8K selection shrinkage delta,0.0211,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G04,Public-benchmark transport study - GSM8K,GSM8K delta upper 95 sensitivity,0.0887,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G05,Public-benchmark transport study - GSM8K,GSM8K accepted holdout n,52,tasks,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G06,Public-benchmark transport study - GSM8K,GSM8K control deployments,5,deployments,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G07,Public-benchmark transport study - GSM8K,GSM8K control alarms per guard,0,alarms,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G08,Public-benchmark transport study - GSM8K,GSM8K prompt deployments,5,deployments,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G09,Public-benchmark transport study - GSM8K,GSM8K prompt bank hits,5,deployments,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G10,Public-benchmark transport study - GSM8K,GSM8K prompt zero-delay bank hits,5,deployments,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G11,Public-benchmark transport study - GSM8K,GSM8K prompt gap mean,0.4242,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G12,Public-benchmark transport study - GSM8K,GSM8K prompt gap CI lower,0.4073,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G13,Public-benchmark transport study - GSM8K,GSM8K prompt gap CI upper,0.4412,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G14,Public-benchmark transport study - GSM8K,GSM8K FCR pre mean,0.0861,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G15,Public-benchmark transport study - GSM8K,GSM8K FCR post mean,0.4767,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G16,Public-benchmark transport study - GSM8K,GSM8K FCR post CI lower,0.4573,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G17,Public-benchmark transport study - GSM8K,GSM8K FCR post CI upper,0.4961,fraction,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G18,Public-benchmark transport study - GSM8K,GSM8K upper-delta bank alarms,5,alarms,s3n2/records_s3n2/endpoints.json and study_results.json,public benchmark evidence,Five task-order seeds from shared finite GSM8K pool
+S3N2-G19,Public-benchmark transport study - GSM8K,Randomized onset epochs,"5,6,6,5,5",epochs,s3n2 endpoints.json,design/result,
+S3N2-G20,Public-benchmark transport study - GSM8K,Calendar-bank alarm epochs,"5,6,6,5,5",epochs,s3n2 endpoints.json,result,
+S3N-P01,the MBPP public-benchmark study family,the MBPP public-benchmark study raw records,21548,records,independent_verification.json:s3n_raw.records,provenance/sensitivity,Includes partial aborted GSM control calls
+S3N-P02,the MBPP public-benchmark study family,the GSM8K public-benchmark study raw records,16525,records,independent_verification.json:s3n2_raw.records,provenance/sensitivity,75 solver parse failures suppress judge calls
+S3N-P03,the MBPP public-benchmark study family,the MBPP public-benchmark study materialized task rows,10100,rows,independent_verification.json:s3n_raw.per_task_rows,provenance/sensitivity,Includes completed MBPP and partial GSM control rows
+S3N-P04,the MBPP public-benchmark study family,the GSM8K public-benchmark study materialized task rows,8000,rows,independent_verification.json:s3n2_raw.per_task_rows,provenance/sensitivity,Complete ten deployments
+S3N-P05,the MBPP public-benchmark study family,GSM deployment raw calls before the MBPP public-benchmark study abort,1150,calls,independent_verification.json:s3n_abort_audit,provenance/sensitivity,Contradicts supplied zero-call narrative; all control condition
+S3N-P06,the MBPP public-benchmark study family,Materialized GSM control rows before the MBPP public-benchmark study abort,500,rows,independent_verification.json:s3n_abort_audit,provenance/sensitivity,Epochs 2-6 only
+S3N-P07,the MBPP public-benchmark study family,Non-materialized epoch-7 raw calls before abort,153,calls,independent_verification.json:s3n_abort_audit,provenance/sensitivity,78 solver plus 75 judge
+S3N-P08,the MBPP public-benchmark study family,the MBPP public-benchmark study GSM prompt-drift raw calls before abort,0,calls,independent_verification.json:s3n_abort_audit,provenance/sensitivity,No prior drift-arm outcome
+S3N-P09,the MBPP public-benchmark study family,MBPP task executions independently replayed,9900,task executions,independent_verification.json:mbpp_reexecution,provenance/sensitivity,Fixed PYTHONHASHSEED=0
+S3N-P10,the MBPP public-benchmark study family,MBPP replay matches,9891,task executions,independent_verification.json:mbpp_reexecution,provenance/sensitivity,Nine task-480 hash-order mismatches
+S3N-P11,the MBPP public-benchmark study family,MBPP replay mismatches,9,task executions,independent_verification.json:mbpp_reexecution,provenance/sensitivity,All one hash-order-sensitive candidate
+S3N-P12,the MBPP public-benchmark study family,MBPP sensitivity gap minimum,0.0664,fraction,independent sensitivity audit,provenance/sensitivity,All task-480 occurrences pass
+S3N-P13,the MBPP public-benchmark study family,MBPP sensitivity gap maximum,0.0707,fraction,independent sensitivity audit,provenance/sensitivity,All task-480 occurrences fail

@@ -1,0 +1,298 @@
+[
+  {
+    "id": "C01",
+    "claim": "The calibrated routing optimum is tau*=1-Kstrong/L.",
+    "evidence_type": "analytic decision theory",
+    "evidence_source": "Main Proposition 1; supplement Section 2.1",
+    "status": "supported",
+    "boundary": "Requires the declared costs and the scoped successful strong tier."
+  },
+  {
+    "id": "C02",
+    "claim": "Additive overconfidence has an exact incremental-cost integral and a local quadratic law.",
+    "evidence_type": "analytic decision theory plus paired Monte Carlo",
+    "evidence_source": "controlled-study reviewer artifact::results/s1/pricing records; main Equation 1",
+    "status": "supported",
+    "boundary": "Applies to the declared additive-shift model and task density."
+  },
+  {
+    "id": "C03",
+    "claim": "At epsilon=0.15, accepted failure rises from 0.241 to 0.320 and expected cost rises by 0.327 per task.",
+    "evidence_type": "controlled mechanism evidence",
+    "evidence_source": "controlled-study reviewer artifact::results/s1/summary.json",
+    "status": "supported",
+    "boundary": "Constructed population; not a live-judge transport claim."
+  },
+  {
+    "id": "C04",
+    "claim": "The finite two-family restart construction has joint probability of any false alarm at most alpha under both conditional nulls.",
+    "evidence_type": "analytic sequential validity",
+    "evidence_source": "Main Proposition 2; supplement Section 3",
+    "status": "supported",
+    "boundary": "Requires predictable references, valid audit filtration, both conditional nulls, alpha allocation, and the finite declared start schedule."
+  },
+  {
+    "id": "C05",
+    "claim": "The primary implementation alarms in 16 of 5,000 no-drift deployments.",
+    "evidence_type": "finite implementation check",
+    "evidence_source": "controlled-study reviewer artifact::results/s1/null records",
+    "status": "supported",
+    "boundary": "Finite check; not proof of the anytime-valid statement."
+  },
+  {
+    "id": "C06",
+    "claim": "The first-order delay calculator matches measured mean delay within 1-4% across five shifts.",
+    "evidence_type": "calibration evidence",
+    "evidence_source": "controlled-study reviewer artifact::results/s1/delay records",
+    "status": "supported",
+    "boundary": "Gap-matched stationary streams; expectation heuristic, not a stopping-time bound."
+  },
+  {
+    "id": "C07",
+    "claim": "Predeclared restarts preserve late-onset power relative to a start-once process.",
+    "evidence_type": "controlled architecture comparison",
+    "evidence_source": "controlled-study reviewer artifact::results/s1/onset records",
+    "status": "supported",
+    "boundary": "Delay is conditional on post-onset alarm and counted in audited accepted labels."
+  },
+  {
+    "id": "C08",
+    "claim": "Claim and performance banks monitor distinct operational contracts.",
+    "evidence_type": "formal definition plus controlled intervention",
+    "evidence_source": "controlled-study reviewer artifact::results/s2 diagnostic records",
+    "status": "supported",
+    "boundary": "Alarm signatures identify violated contracts, not unique physical root causes."
+  },
+  {
+    "id": "C09",
+    "claim": "Overconfidence world J1 produces both-contract signatures in 999/1000 deployments.",
+    "evidence_type": "frozen controlled causal mechanism evidence",
+    "evidence_source": "controlled-study reviewer artifact::results/s2/diagnostic_summary.json",
+    "status": "supported",
+    "boundary": "Constructed intervention."
+  },
+  {
+    "id": "C10",
+    "claim": "Honest workload hardening W2 produces performance-only signatures in 966/1000 deployments.",
+    "evidence_type": "frozen controlled causal mechanism evidence",
+    "evidence_source": "controlled-study reviewer artifact::results/s2/diagnostic_summary.json",
+    "status": "supported",
+    "boundary": "Constructed intervention; low coverage increases the burden of collecting audits."
+  },
+  {
+    "id": "C11",
+    "claim": "Masked calibration break M3 produces claim-only signatures in 999/1000 deployments.",
+    "evidence_type": "frozen controlled causal mechanism evidence",
+    "evidence_source": "controlled-study reviewer artifact::results/s2/diagnostic_summary.json",
+    "status": "supported",
+    "boundary": "Constructed masking intervention."
+  },
+  {
+    "id": "C12",
+    "claim": "The historical API-pilot records remain internally consistent after reconstructing the first-100-accepted audit rule.",
+    "evidence_type": "artifact and lineage verification",
+    "evidence_source": "historical API lineage::pilot records and verification",
+    "status": "supported as lineage",
+    "boundary": "Corrects 21 over-marked audit flags; does not authenticate the API execution independently."
+  },
+  {
+    "id": "C13",
+    "claim": "The historical ten-seed arithmetic replication reproduced control 0/10, prompt drift 10/10, and mixture shift 0/10 alarm outcomes.",
+    "evidence_type": "historical external corroboration",
+    "evidence_source": "historical API lineage::results/replication/replication_summary.json",
+    "status": "supported as secondary",
+    "boundary": "Uses the earlier shared calibration and onset-aligned design; not pooled with the generated-task API study."
+  },
+  {
+    "id": "C14",
+    "claim": "Historical code, confidence-family, second-model, and workload arms show heterogeneous effects of similar operational edits.",
+    "evidence_type": "exploratory external and falsification evidence",
+    "evidence_source": "historical API lineage::results/replication and results/pilot_arms",
+    "status": "supported as secondary",
+    "boundary": "Different protocols and an incomplete prospective provenance and calibration contract; does not expand the primary claim."
+  },
+  {
+    "id": "C15",
+    "claim": "Ramp delay follows D+R within 2.8% over the recorded tested range.",
+    "evidence_type": "secondary robustness evidence",
+    "evidence_source": "historical API lineage::results/extension/ramp_delays.csv",
+    "status": "supported as secondary",
+    "boundary": "Deterministic tested ramps at the declared final gap."
+  },
+  {
+    "id": "C16",
+    "claim": "A five-lambda mixture pays a 1.224-1.280 delay premium over gap-matched tuning.",
+    "evidence_type": "secondary robustness evidence",
+    "evidence_source": "historical API lineage::results/extension/mixture_delays.csv",
+    "status": "supported as secondary",
+    "boundary": "Measured only over the tested gap grid."
+  },
+  {
+    "id": "C17",
+    "claim": "Repeated-look and CUSUM comparisons illustrate the cost of differing error semantics and horizon transfer.",
+    "evidence_type": "secondary comparative evidence",
+    "evidence_source": "historical API lineage::results/extension baseline records",
+    "status": "supported with qualification",
+    "boundary": "Not a general ranking of CUSUM and e-process methods."
+  },
+  {
+    "id": "C18",
+    "claim": "The two-sided noisy-proxy arm motivates a separately validated underconfidence contract.",
+    "evidence_type": "exploratory diagnostic evidence",
+    "evidence_source": "historical API lineage::results/pilot_arms/offline_arms.json",
+    "status": "exploratory only",
+    "boundary": "Its score-derived reference was not re-certified under the conditional null after selection."
+  },
+  {
+    "id": "C19",
+    "claim": "The demonstrated object is an evaluation control plane that can be integrated into adaptive systems.",
+    "evidence_type": "systems interpretation",
+    "evidence_source": "Main Operational Implications; validated pricing, contracts, restart state, signatures, and fail-safe transition",
+    "status": "supported as interpretation",
+    "boundary": "Open-ended agent enforcement was not deployed."
+  },
+  {
+    "id": "C20",
+    "claim": "Headline constructed and external results reconstruct from frozen records through independent code paths.",
+    "evidence_type": "computational integrity",
+    "evidence_source": "controlled-study validation records; generated-task API study archive; prior validation records",
+    "status": "supported",
+    "boundary": "Computational integrity does not establish cross-provider external validity or request-body authentication."
+  },
+  {
+    "id": "C21",
+    "claim": "the generated-task API study was prospectively specified and author-controlled hash-frozen before the recorded experimental calls.",
+    "evidence_type": "prospective protocol and chronology evidence",
+    "evidence_source": "generated-task API study::PROTOCOL.md, PROTOCOL_SHA256.txt, registration_receipt.json",
+    "status": "supported with boundary",
+    "boundary": "Author-held provider-response receipt; not an independent preregistration registry or request-body attestation."
+  },
+  {
+    "id": "C22",
+    "claim": "Across ten randomized-onset arithmetic prompt-change deployments, accepted failure rises from 0.018 to 0.305 and all three guards alarm in 10/10 seeds; the calendar bank crosses at onset in every seed.",
+    "evidence_type": "replicated external intervention evidence",
+    "evidence_source": "generated-task API study::records/endpoints.json and study_results.json",
+    "status": "supported",
+    "boundary": "One provider/model snapshot, generated arithmetic tasks, shared week-zero calibration."
+  },
+  {
+    "id": "C23",
+    "claim": "Controls in both external domains produce zero alarms across all 60 guard-deployment combinations.",
+    "evidence_type": "external no-action and implementation evidence",
+    "evidence_source": "generated-task API study::records/endpoints.json P2",
+    "status": "supported",
+    "boundary": "Finite sample under plug-in references; not proof of the analytic null."
+  },
+  {
+    "id": "C24",
+    "claim": "The harder arithmetic mixture contracts coverage from 0.690 to 0.456 with 0/10 claim-bank alarms and a small post-onset claim gap.",
+    "evidence_type": "external workload-shift evidence",
+    "evidence_source": "generated-task API study::records/endpoints.json P3 and study_results.json",
+    "status": "supported",
+    "boundary": "Shows an intact judge under the tested generated mixture; no alarm is not proof of no change."
+  },
+  {
+    "id": "C25",
+    "claim": "On executed-code tasks, the prompt edit yields a mean claim-outcome gap of 0.057 with 95% CI [0.041,0.072] and 0/10 calendar-bank alarms.",
+    "evidence_type": "replicated external estimation evidence",
+    "evidence_source": "generated-task API study::records/endpoints.json P4",
+    "status": "supported",
+    "boundary": "Six hidden tests and subprocess execution; interval spans 0.05 and the effect remains below the bank boundary."
+  },
+  {
+    "id": "C26",
+    "claim": "Using the recorded upper selection-shrinkage value does not change any generated-task API calendar-bank verdict.",
+    "evidence_type": "sensitivity analysis",
+    "evidence_source": "generated-task API study::records/endpoints.json delta_sensitivity",
+    "status": "supported as stability check",
+    "boundary": "Not full propagation of calibration-fit, performance-reference, or selection-stage uncertainty."
+  },
+  {
+    "id": "C27",
+    "claim": "The generated-task API archive has exact task reconstruction and complete condition-seed-epoch judge-response reconciliation, with partial unique historical row-level response linkage.",
+    "evidence_type": "artifact and provenance verification",
+    "evidence_source": "generated-task API task manifest, raw responses, frozen parser, independent pairing recheck",
+    "status": "supported with boundary",
+    "boundary": "Unique ex-post linkage is recoverable for 49.33% of judge calls and 24.75% of arithmetic solver calls; repeated terse or incorrect outputs remain group-linked."
+  },
+  {
+    "id": "C28",
+    "claim": "The same terse judge edit has severe arithmetic effects and smaller code-domain effects across generated and public benchmark task sources.",
+    "evidence_type": "cross-domain and cross-task-source systems inference",
+    "evidence_source": "generated-task API arithmetic/code records; the MBPP public-benchmark study MBPP; the GSM8K public-benchmark study GSM8K",
+    "status": "supported as inference",
+    "boundary": "One provider/model snapshot and finite benchmark pools; not a universal edit effect or natural production transport claim."
+  },
+  {
+    "id": "C29",
+    "claim": "The MBPP and GSM8K public-benchmark studies prospective commitments recompute exactly and bind the pinned GSM8K and MBPP dataset hashes.",
+    "evidence_type": "prospective protocol and artifact verification",
+    "evidence_source": "public-benchmark registration receipts and independent verifier",
+    "status": "supported",
+    "boundary": "Author-held provider receipts support local chronology, not independent request-body attestation or independent preregistration."
+  },
+  {
+    "id": "C30",
+    "claim": "MBPP controls produce zero score, performance, and calendar-bank alarms in 10 deployments.",
+    "evidence_type": "public-benchmark external no-action evidence",
+    "evidence_source": "the MBPP public-benchmark study endpoints.json, study_results.json, per_task.csv",
+    "status": "supported",
+    "boundary": "One provider/model; task-order seeds reuse one finite benchmark pool; plug-in references."
+  },
+  {
+    "id": "C31",
+    "claim": "On MBPP, the terse judge edit raises accepted failure from 0.1132 to 0.1838, yields a claim gap of 0.0684 with t interval [0.0498,0.0870], and causes no guard crossing in 10 deployments.",
+    "evidence_type": "public-benchmark external intervention estimation",
+    "evidence_source": "the MBPP public-benchmark study endpoints.json and independently reconstructed records",
+    "status": "supported",
+    "boundary": "Measurable but non-alarming at the declared tuning; interval reflects task-order seeds from a shared finite pool."
+  },
+  {
+    "id": "C32",
+    "claim": "GSM8K controls produce zero score, performance, and calendar-bank alarms in five deployments.",
+    "evidence_type": "public-benchmark external no-action evidence",
+    "evidence_source": "the GSM8K public-benchmark study endpoints.json and independently reconstructed records",
+    "status": "supported",
+    "boundary": "Five task-order seeds, one provider/model, finite plug-in references."
+  },
+  {
+    "id": "C33",
+    "claim": "On GSM8K, the terse judge edit raises accepted failure from 0.0861 to 0.4767, yields a claim gap of 0.4242 with t interval [0.4073,0.4412], and triggers score, performance, and calendar-bank alarms at onset in 5/5 deployments.",
+    "evidence_type": "confirmatory public-benchmark external intervention evidence",
+    "evidence_source": "the GSM8K public-benchmark study study_results.json, endpoints.json, per_task.csv",
+    "status": "supported",
+    "boundary": "One provider/model and shared finite task pool; the GSM8K public-benchmark study follows partial the MBPP public-benchmark study control-arm exposure but no prior drift-arm outcome."
+  },
+  {
+    "id": "C34",
+    "claim": "Public MBPP and GSM8K arms remove the generated-only task-source limitation while preserving domain-conditional drift heterogeneity.",
+    "evidence_type": "task-source transport inference",
+    "evidence_source": "the MBPP public-benchmark study MBPP and the GSM8K public-benchmark study GSM8K registered arms",
+    "status": "supported with boundary",
+    "boundary": "Public human-written/crowd-sourced benchmarks, not natural repositories, organic production drift, or independently operated replication."
+  },
+  {
+    "id": "C35",
+    "claim": "the MBPP and GSM8K public-benchmark studies provide complete ex-ante task-call-response linkage for all materialized task rows.",
+    "evidence_type": "artifact and provenance verification",
+    "evidence_source": "per_task.csv, raw_responses.jsonl.gz, prompt-hash reconstruction, independent verifier",
+    "status": "supported",
+    "boundary": "the MBPP public-benchmark study contains additional non-materialized mid-abort control calls; provider request bodies were not independently confirmed outside the retained records."
+  },
+  {
+    "id": "C36",
+    "claim": "The supplied the MBPP public-benchmark study abort narrative incorrectly states that no GSM deployment call occurred before the abort.",
+    "evidence_type": "falsification and lineage audit",
+    "evidence_source": "the MBPP public-benchmark study raw_responses.jsonl.gz and per_task.csv",
+    "status": "supported discrepancy",
+    "boundary": "The prior exposure is confined to a partial control deployment; no GSM prompt-drift call or completed GSM deployment occurred."
+  },
+  {
+    "id": "C37",
+    "claim": "One MBPP task-candidate pair is Python hash-order-sensitive, but all-pass, all-fail, and exclusion sensitivities preserve the MBPP endpoint and alarm verdicts.",
+    "evidence_type": "independent execution and sensitivity audit",
+    "evidence_source": "Independent re-execution of 9,900 MBPP task outcomes",
+    "status": "supported with boundary",
+    "boundary": "9/9,900 fixed-seed re-execution mismatches arise from task 480; future runners should pin PYTHONHASHSEED."
+  }
+]

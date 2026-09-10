@@ -1,0 +1,8 @@
+{
+  "quad_a": 12.01, "quad_R2": 0.9989,
+  "delay_ratio_min": 1.05, "delay_ratio_max": 1.11,
+  "null_trips": 10, "null_n": 400, "cp_low": 0.0121, "cp_high": 0.0455,
+  "bowl_060": 8.2373, "bowl_max_rise": 0.0115,
+  "alarm_epoch": 11, "fcr_baseline": 0.248, "fcr_peak": 0.354,
+  "half_Lf": 14.99
+}

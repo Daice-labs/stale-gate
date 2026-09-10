@@ -1,0 +1,38 @@
+{
+ "study": "RP-T15 oracle arm",
+ "alpha": 0.05,
+ "tau_star": 0.6,
+ "regret_slope": 2.6688666666666667,
+ "regret_R2": 0.9327717221884189,
+ "false_trip_rate": 0.025,
+ "guard_alarm_epoch": 11,
+ "onset": 8,
+ "fcr_pre": 0.24819644298923293,
+ "fcr_post": 0.33174242428534956,
+ "adjudication": [
+  {
+   "claim": "G0a Prop-1 threshold optimality (empirical tau ~ tau*)",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "G0b regret linear in calibration error (R^2 > 0.9)",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "AB1 zero-drift control: guard false-trip <= alpha",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "Prop-2 delay tracks log(1/alpha)/(2 g^2)",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "Staleness: week-zero threshold's FCR degrades under drift",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "Guard detects injected onset within the calculator bound",
+   "verdict": "PASS"
+  }
+ ]
+}

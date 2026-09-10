@@ -1,0 +1,7 @@
+claim,verdict
+G0a Prop-1 threshold optimality (empirical tau ~ tau*),PASS
+G0b regret linear in calibration error (R^2 > 0.9),PASS
+AB1 zero-drift control: guard false-trip <= alpha,PASS
+Prop-2 delay tracks log(1/alpha)/(2 g^2),PASS
+Staleness: week-zero threshold's FCR degrades under drift,PASS
+Guard detects injected onset within the calculator bound,PASS

@@ -1,0 +1,121 @@
+{
+  "provenance": "recomputed from CSVs where derivable; remaining values carried from RP-T15-executed.ipynb stdout and source",
+  "cost_model": {
+    "cheap": 1.0,
+    "strong": 8.0,
+    "verify": 0.5,
+    "fail_loss": 20.0
+  },
+  "tau_optimality": {
+    "cost_at_tau_star": 8.237,
+    "grid_best_tau": 0.6,
+    "grid_best_cost": 8.237
+  },
+  "false_trip_trials": 400,
+  "detectable_gap_calculator": {
+    "primary_tier_g_star_n": {
+      "n_100": 0.1224,
+      "n_400": 0.0612,
+      "law": "sqrt(ln(1/alpha)/(2n))"
+    },
+    "safety_factor_two_tier": {
+      "n_100": 0.245,
+      "n_400": 0.122,
+      "note": "doubles detectable gap (quadruples labels); the tier a published budget should name"
+    }
+  },
+  "fail_safe_costs": {
+    "disabled_gate_per_task": {
+      "value": 9.5,
+      "derivation": "K_cheap + K_verify + K_strong = 1 + 0.5 + 8, exact under strong-success scope"
+    },
+    "gated_per_task": {
+      "value": 8.815,
+      "derivation": "staleness.csv cost, final (stale) epoch"
+    }
+  },
+  "guard_lambda_rule": "lam = min(4 * g_target, 1.5)",
+  "verified_recomputations": {
+    "regret_slope": 2.6689,
+    "regret_R2": 0.9328,
+    "fcr_pre_from_csv": 0.2482,
+    "alarm_epoch_from_logE": 11
+  },
+  "null_world": {
+    "record": "null_world_trips.csv",
+    "streams": 400,
+    "stream_len": 3000,
+    "seed_rule": "SEED+1000+s, SEED=15",
+    "false_trip_rate": 0.025
+  },
+  "regret_shape": {
+    "verdict": "quadratic, per 0.5*L*f(tau*)*eps^2; straight-line summary rejected by measurement errors",
+    "quadratic_fit_5pts": {
+      "a": 12.01,
+      "b": 0.267,
+      "R2": 0.9989,
+      "chi2_df2": 0.26
+    },
+    "linear_fit_5pts": {
+      "slope": 2.669,
+      "R2": 0.9328,
+      "chi2_df3": 15.73
+    },
+    "dense_semianalytic": {
+      "a": 12.6,
+      "b": 0.207
+    },
+    "theory_curvature": {
+      "f_c_at_tau_star": 1.499,
+      "half_L_f": 14.99,
+      "gap_note": "clipping at score boundaries"
+    }
+  },
+  "threshold_robustness_under_noise": {
+    "coarse_grid_min": {
+      "tau": 0.6,
+      "cost": 8.2373,
+      "matches_shipped": 8.237
+    },
+    "fine_bowl": {
+      "0.56": {
+        "cost": 8.2488,
+        "se": 0.0276,
+        "rise_vs_060": 0.0115
+      },
+      "0.58": {
+        "cost": 8.2432,
+        "se": 0.0249,
+        "rise_vs_060": 0.0059
+      },
+      "0.60": {
+        "cost": 8.2373,
+        "se": 0.0233,
+        "rise_vs_060": 0.0
+      },
+      "0.62": {
+        "cost": 8.2323,
+        "se": 0.0229,
+        "rise_vs_060": -0.005
+      },
+      "0.64": {
+        "cost": 8.2412,
+        "se": 0.0226,
+        "rise_vs_060": 0.0039
+      }
+    },
+    "record": "threshold_bowl.json",
+    "reading": "flat within Monte Carlo resolution; near-optimality of the crossover is the content, argmin identity is a noise lottery",
+    "population_expectation_note": "an independent large-sample recomputation of the population expectation under expected-loss accounting gives 8.17; the canonical stream-and-accounting value is 8.237"
+  },
+  "false_trip_interval": {
+    "k": 10,
+    "n": 400,
+    "rate": 0.025,
+    "clopper_pearson_95": [
+      0.0121,
+      0.0455
+    ]
+  },
+  "guard_characterization": "accepted-cohort performance monitor; calibration drift detected via its performance footprint; conditional null E[X_t|F_{t-1}]>=m0"
+}
